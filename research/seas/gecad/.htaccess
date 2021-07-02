@@ -1,0 +1,35 @@
+#encoding
+AddDefaultCharset UTF-8
+
+# mime types
+AddType application/rdf+xml .rdf
+AddType text/turtle .ttl
+AddType application/javascript .js
+AddType application/n-triples .n3
+
+# Turn off MultiViews
+Options -MultiViews
+
+# Rewrite engine setup
+RewriteEngine On
+RewriteBase /research/seas/gecad/
+
+# Rewrite rule to serve HTML content from the datatype URI if requested
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteCond %{HTTP_ACCEPT} !text/turtle
+RewriteCond %{HTTP_ACCEPT} !application/javascript
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteCond %{REQUEST_URI} dataset1$
+RewriteRule !^((.*)\.[^\.]*)$ dataset1.html [R=303]
+
+# Rewrite rule to serve RDF content from the datatype URI if requested
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteCond %{REQUEST_URI} dataset1$
+RewriteRule !^((.*)\.[^\.]*)$ dataset1.ttl [R=303]
+
+# Rewrite rule to serve RDF content from the datatype URI if requested
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteCond %{REQUEST_URI} dataset1$
+RewriteRule !^((.*)\.[^\.]*)$ dataset1.rdf [R=303]

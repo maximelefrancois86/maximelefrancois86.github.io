@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://connected-intelligence.univ-st-etienne.fr/?p=575r -->
+<html style="margin-top:0px !important;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Master 2 - Federated queries over Web of Things devices</title>
+    
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./common_files/style.css">
+    <link rel="stylesheet" href="./common_files/grid_960_24c.css">
+    <link rel="icon" href="https://connected-intelligence.univ-st-etienne.fr/wp-content/themes/Connected-intelligence/favicon.ico">
+
+    <!--[if lt IE 9]>
+    <script src="https://connected-intelligence.univ-st-etienne.fr/wp-content/themes/Connected-intelligence/library/html5shiv.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" id="nextgen_gallery_related_images-css" href="./common_files/nextgen_gallery_related_images.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="./common_files/thickbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpdm-front-css" href="./common_files/front.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-calendar-events-public-css" href="./common_files/gce-style.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://connected-intelligence.univ-st-etienne.fr/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://connected-intelligence.univ-st-etienne.fr/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Connected Intelligence at IJCAI 2016" href="https://connected-intelligence.univ-st-etienne.fr/2016/05/27/connected-intelligence-at-ijcai-2016/">
+<meta name="generator" content="WordPress 3.7.16">
+<link rel="canonical" href="https://connected-intelligence.univ-st-etienne.fr/2016/05/27/one-year-research-engineer-position-web-developer-restful-web-apis-semantic-web-web-of-things-java-javascript/">
+<link rel="shortlink" href="https://connected-intelligence.univ-st-etienne.fr/?p=575">
+<style>/* --- Auto Attachments Custom Css --- */
+
+/* --- Auto Attachments Custom Css --- */
+</style> 
+    <script language="JavaScript">
+    <!--
+      jQuery(function(){
+          
+          jQuery('.wpdm-popup').click(function(){
+              tb_show(jQuery(this).html(),this.href+'&modal=1&width=600&height=400');
+              return false;
+          });
+          
+          jQuery('.haspass').click(function(){
+              var url = jQuery(this).attr('href');
+              var id = jQuery(this).attr('rel');
+              var password = jQuery('#pass_'+id).val();
+              jQuery.post('https://connected-intelligence.univ-st-etienne.fr/',{download:id,password:password},function(res){
+                  
+                  if(res=='error') {
+                    
+                      jQuery('#wpdm_file_'+id+' .perror').html('Wrong Password');
+                      setTimeout("jQuery('#wpdm_file_"+id+" .perror').html('');",3000);
+                      return false;
+                  } else {
+                      location.href = 'https://connected-intelligence.univ-st-etienne.fr/?wpdmact=process&did='+res;
+                  }
+                  //if(res.url!='undefined') location.href=res.url;
+                                           
+              });
+               
+              return false;
+          });
+      })
+    //-->
+    </script>
+    <script type="text/javascript">jwplayer.defaults = { "ph": 2 };</script><!-- <meta name="NextGEN" version="2.0.31" /> -->
+<style type="text/css" media="all">
+/* <![CDATA[ */
+@import url("https://connected-intelligence.univ-st-etienne.fr/wp-content/plugins/wp-table-reloaded/css/plugin.css?ver=1.9.4");
+@import url("https://connected-intelligence.univ-st-etienne.fr/wp-content/plugins/wp-table-reloaded/css/datatables.css?ver=1.9.4");
+/* ]]> */
+</style>  </head>
+
+
+<body>
+
+
+  <div id="espace_prive">
+
+  </div>
+
+
+  <header>
+    <div class="row">
+        <h1 class="grid_12">
+          <a href="https://connected-intelligence.univ-st-etienne.fr/"><img src="./common_files/logo-ci.jpg" alt="Connected Intelligence"></a>
+        </h1>
+        
+        <div id="logo" class="grid_12">
+          <a href="https://portail.univ-st-etienne.fr/bienvenue/recherche/laboratoire-hubert-curien--26143.kjsp" target="_blank">
+            <img src="./common_files/laboratoire-hubert-curier.jpg" alt="Laboratoire Hubert Curien">
+          </a>
+          <a href="https://www.mines-stetienne.fr/fr" target="_blank">
+            <img src="./common_files/mine-st.jpg" alt="Mines à Saint-Etienne">
+          </a>
+          <a href="https://www.telecom-st-etienne.fr/" target="_blank">
+            <img src="./common_files/telecom-st.jpg" alt="Telecom à Saint-Etienne">
+          </a>
+          <a href="https://portail.univ-st-etienne.fr/" target="_blank">
+            <img src="./common_files/universite-jean-monnet.jpg" alt="Université de Jean Monnet">
+          </a>
+          <a href="https://www.cnrs.fr/" target="_blank">
+            <img src="./common_files/cnrs.jpg" alt="Université de Jean Monnet">
+          </a>
+        </div>
+
+
+    </div><!-- FIN DIV ROW -->
+
+  </header>
+<div id="topbar">
+    <div class="row">
+        <div class="breadcrumb  grid_24">
+Master 2 - Federated queries over Web of Things devices
+        </div>  
+    </div>
+</div>
+<div id="page" class="row">
+
+  <article class="grid_17">
+<ul style="color: #453838;font-size: 14px;font-weight: normal;font-family: arial;line-height: 19px;margin: 10px;padding: 10px">
+<li><strong>Advisors</strong> – <a href="https://www.maxime-lefrancois.info/">Maxime Lefrançois</a>, <a href="https://www.emse.fr/~zimmermann/">Antoine Zimmermann</a></li>
+<li><strong>Contact</strong> – send application to <a href="mailto:Maxime.Lefrancois@emse.fr,Antoine.Zimmermann@emse.fr">Maxime.Lefrancois@emse.fr, Antoine.Zimmermann@emse.fr</a></li>
+<li><strong>Location</strong> – Laboratoire Hubert Curien &amp; Institut Henri Fayol, Mines Saint-Etienne</li>
+<li><strong>Team</strong> – Connected Intelligence &amp; Computer science and Intelligent Systems Dpt</li>
+</ul>
+
+
+<h3>Summary</h3>
+
+<p>A huge amount of Linked Data is available on the Web, and much more will be exposed soon as little devices such as sensors enter the realm of the Linked Data via the Web of Things. To answer queries over the current Web of Linked Data, there historically exists two main approaches. The first approach consists in dumping all the data from the sources one wants to query, then executing the query on these local dumps. The other approach consists in requesting the SPARQL endpoint of a dataset to execute a query for us. The Linked Data Fragments initiative [1,2] puts these two approaches at two ends of a scale, and suggest there exists approaches in between for which the computation of the query is neither fully on the server, nor fully on the client. The first new such approach is named Triple Pattern Fragments, and consists in exposing a dataset through a web inferface that data clients can use to select triples according to a fixed subject, and/or predicate, and/or object.</p>
+
+<p>On the Web of Things, various devices are to expose some time-changing RDF graphs, and applications need to query this data. Due to their memory constraints, we should not assume that these devices may expose a SPARQL endpoint. On the other hand, due to their battery constraints, one should not dump every data from every device to answer a simple query, as the data may be irrelevant for the query. Finally, due to accessibility constraints, one should not need a high number of triple pattern fragment calls to retrieve just a simple RDF graph.</p>
+
+<p>Hence the solutions described above are deemed to be bad fits for querying the Linked Data on the Web of Things. The objective of this internship is to propose alternative solutions that could be implemented in a gateway. In particular, we assume that the gateway has information about locations where RDF graphs can be dumped, the shape of these RDF graphs, and potentially some more contextual information about the devices.</p>
+
+<h3>Expected results</h3>
+
+<h4>Theoretical</h4>
+ <ul>
+  <li>How to describe the location and shape of the RDF graphs that are exposed by devices?</li>
+  <li>Given a query, which RDF sources should be looked up to answer the query?</li>
+ </ul>
+
+<h4>Practical</h4>
+ <ul>
+  <li>The proposed solution will be implemented on the demonstration platform of the team.</li>
+ </ul>
+
+<h3>References</h3>
+
+<ul>
+ <li> [1] Linked Data Fragments: Query the Web of data on Web-scale by moving intelligence
+from servers to clients. Technical report. <a href="https://linkeddatafragments.org/">https://linkeddatafragments.org/</a>, last
+access: 07-11-2016.</li>
+ <li> [2] R. Verborgh, M. Vander Sande, O. Hartig, J. Van Herwegen, L. De Vocht, B. De Meester, G. Haesendonck, and P. Colpaert. Triple Pattern Fragments: a lowcost knowledge graph interface for the Web. Journal of Web Semantics, 37-38:184-206, Mar. 2016.</li>
+</ul>
+
+</article>
+
+</div>
+<footer>
+
+  <div class="row">
+    <img class="grid_6" src="./common_files/logo-footer.jpg">
+    <div id="contact" class="grid_18">
+      <nav>
+            <div class="menu-menu_bas-container"><ul id="menu-menu_bas" class="menu"><li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a title="Home" href="https://connected-intelligence.univ-st-etienne.fr/">Connected Intelligence</a></li>
+<li id="menu-item-130" class="menu-item menu-item-type-taxonomy menu-item-object-catevents menu-item-130"><a href="https://connected-intelligence.univ-st-etienne.fr/catevents/events/">Events</a></li>
+<li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://connected-intelligence.univ-st-etienne.fr/publication/">Publications</a></li>
+<li id="menu-item-131" class="menu-item menu-item-type-taxonomy menu-item-object-catdemo menu-item-131"><a href="https://connected-intelligence.univ-st-etienne.fr/catdemos/demos/">Demos</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="https://connected-intelligence.univ-st-etienne.fr/ongoing-projects/">Projects</a></li>
+<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://connected-intelligence.univ-st-etienne.fr/staff/">Staff</a></li>
+</ul></div>         </nav>
+      </div>
+  </div>
+
+</footer>
+</body></html>

@@ -1,0 +1,43 @@
+#encoding
+AddDefaultCharset UTF-8
+
+Redirect permanent /seas/data-sets/2011_August_04_to_18.ttl /research/seas/gecad/2011_August_04_to_18.ttl
+Redirect permanent /seas/data-sets/2011_June_03_to_17.ttl /research/seas/gecad/2011_June_03_to_17.ttl
+Redirect permanent /seas/data-sets/2011_September_26_to_October_03.ttl /research/seas/gecad/2011_September_26_to_October_03.ttl
+Redirect permanent /seas/data-sets/2012_December_29_to_2013_January_12.ttl /research/seas/gecad/2012_December_29_to_2013_January_12.ttl
+Redirect permanent /seas/data-sets/2012_July_16_to_26.ttl /research/seas/gecad/2012_July_16_to_26.ttl
+Redirect permanent /seas/data-sets/2012_June_01_to_15.ttl /research/seas/gecad/2012_June_01_to_15.ttl
+Redirect permanent /seas/data-sets/2013_January_23_to_February_07.ttl /research/seas/gecad/2013_January_23_to_February_07.ttl
+Redirect permanent /seas/data-sets/2014_January_06_to_30.ttl /research/seas/gecad/2014_January_06_to_30.ttl
+Redirect permanent /docs/foaf.rdf /me
+
+RedirectMatch 404 ^/.git/?
+RedirectMatch 404 ^README.md$
+
+
+DirectoryIndex index.html
+
+# mime types
+AddType application/rdf+xml .rdf
+AddType text/turtle .ttl
+
+# Rewrite engine setup
+RewriteEngine On
+RewriteBase /
+
+# Rewrite rule to serve HTML content from the datatype URI if requested
+#RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+#RewriteCond %{HTTP_ACCEPT} !text/turtle
+#RewriteCond %{HTTP_ACCEPT} text/html [OR]
+#RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+#RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+#RewriteRule ^me$ me.html [R=303]
+
+# Rewrite rule to serve RDF content from the datatype URI if requested
+#RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+#RewriteRule ^me$ me.rdf [R=303]
+
+# Rewrite rule to serve RDF content from the datatype URI if requested
+#RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^me$ me.ttl [R=303]
+

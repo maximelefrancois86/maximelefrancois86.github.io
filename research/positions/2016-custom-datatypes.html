@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Master 2 Internship Open Position</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<h1 class="accordion_toggle">Master 2 Internship Open Position</h1>
+
+<h2>Title</h2>
+<p>Handling Custom Datatypes in Semantic Web standards for Question Answering</p>
+
+<h2>Context</h2>	
+<p> <a href="https://wdaqua.informatik.uni-bonn.de/">WDAqua project</a>, <a href="https://connected-intelligence.univ-st-etienne.fr">Connected-Intelligence team</a>, Laboratoire Hubert Curien, <a href="https://goo.gl/maps/J5b8PWzWMwn">Saint-Étienne, FR</a>.</p>
+
+	
+<h2>Contacts</h2> 
+Please send CV and resumé to:
+<p><a href="https://www.emse.fr/~zimmermann/">Antoine Zimmermann</a> (EMSE, Institut Henri Fayol), <a href="mailto:antoine.zimmermann@emse.fr">antoine.zimmermann@emse.fr</a>, <a href="callto:+33477426603">+33 (0)4 77 42 66 03</a></p>
+<p><a href="https://www.maxime-lefrancois.info/">Maxime Lefran&ccedil;ois</a> (EMSE, Institut Henri Fayol), <a href="mailto:maxime.lefrancois@emse.fr">maxime.lefrancois@emse.fr</a></p>
+
+
+<h2>Keywords</h2>
+<p>Semantic Web, Datatypes, Interoperability</p>
+
+<h2>Summary</h2>
+
+<p>The <a href="https://wdaqua.informatik.uni-bonn.de/">WDAqua project</a> aims at developing research for Question Answering systems based on structured data on the Web. Part of the Web Data comprises entities that are processable only by machines, but a large subset of the data on the Web is available as literal values that human can understand. These literal values must be used to generate the answers a human expect. Yet, the meaning of a literal can only be interpreted with respect to a data type.</p>
+
+<p> In the <a href="https://www.w3.org/TR/rdf11-concepts/">Resource Description Framework</a>, the data model underlying the Web of Data, <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal">literals</a> are composed of a <a href="https://www.unicode.org/versions/Unicode8.0.0/">UNICODE</a> string (the <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form">lexical form</a>), a <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-datatype-iri">datatype IRI</a>, and optionally, when the datatype IRI is <a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>, a <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-language-tag">language tag</a>. </p>
+
+
+<p>Any <a href="https://www.ietf.org/rfc/rfc3987.txt">IRI</a> can take the place of a datatype IRI, but the specification only defines the precise meaning of a literal when the datatype IRI is among a predefined subset. 
+</p>
+<p>
+It may be interesting to define custom datatypes, as does the <a href="https://mappings.dbpedia.org/index.php/DBpedia_Datatypes">DBpedia project</a>. Literals with custom datatypes could advantageously represent classical structures such as vectors and matrices, measurements.</p>
+<pre>
+"4.3 + 3i"^^&lt;https://example.org/complex&gt; . 
+"(-4, 1)"^^&lt;https://example.org/vector&gt; . 
+"( ( -4, 1 ) , ( 3, 2 ) )"^^&lt;https://example.org/2dmatrix&gt; . 
+"darkturquoise"^^&lt;https://example.org/css3-color&gt; . 
+"25 cm"^^&lt;https://example.org/length&gt; .
+</pre> 
+<p>
+Yet, their support by RDF processors is rare and implementation specific. 
+When an RDF processor encounters a RDF literal with a new unknown custom datatype, it needs to somehow understand what the datatype represents. This would be interesting for instance to:</p>
+<ul>
+<li>check that the lexical form is "valid" for the custom datatype. For example, <code>"zmefo"</code> is not a valid lexical form for <code>&lt;https://example.org/complex&gt;</code></li>
+<li>compare the value of two literals. For example, <code>"darkturquoise"</code> has the same value as <code>"#00CED1"</code> for <code>&lt;https://example.org/css3-color&gt;</code></li>
+<li>propose ordering of literals. For example, <code>"25 cm"</code> has a greater value than <code>"50 mm"</code> for <code>&lt;https://example.org/length&gt;</code></li>
+</ul>  
+
+<h2>Expected Results</h2>
+
+<h3>Theoretical results</h3>
+<ul>
+  <li><p>literature review about custom datatypes;</p></li>
+  <li><p>an RDF vocabulary to describe families of custom datatypes.</p></li>
+</ul>
+
+<h3>Practical results</h3>
+<p>The results will show the interest of custom datatypes for QA. Can one infer the datatype of the expected result? Can one eliminate false results, or speed up the search?</p>
+
+<p>A subset of the following:</p>
+<ul>
+  <li><p>defining a library of custom datatypes</p></li>
+  <li><p>a tool for editing custom datatypes</p></li>
+  <li><p>extending a classical RDF processor so that it understands new custom datatypes on-the-fly</p></li>
+</ul>
+
+<h2>References:</h2>
+<p>[1] Richard Cyganiak, David Wood, Markus Lanthaler. <a href="https://www.w3.org/TR/rdf11-concepts">RDF 1.1 Concepts and Abstract Syntax</a>. W3C Recommendation, 2014.</p>
+<p>[2] Paul V. Biron, Ashok Malhotra. <a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a>. W3C Recommendation, 2004.</p>
+<p>[3] Pascal Hitzler, Markus Krötzsch, Bijan Parsia, Peter F. Patel-Schneider, Sebastian Rudolph. <a href="https://www.w3.org/TR/rdf-primer/">OWL 2 Web Ontology Language Primer: Advanced Use of Datatypes</a>. W3C Recommendation, 2012.</p>
+<p>[4] Maxime Lefran&ccedil;ois, Antoine Zimmermann, Supporting Arbitrary Custom Datatypes in RDF and SPARQL, under review.</p>
+
+</body>
+</html>
+

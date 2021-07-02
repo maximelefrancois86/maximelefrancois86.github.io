@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(234,247,253);
+}
+h1, h2, h3 {
+    font-family: "Roboto";
+    color: rgb(52,121,170);
+    font-style: normal;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.460rem;
+}
+h2 {
+    font-weight: 800;
+    font-size: 1.30rem;
+}
+h3 {
+    font-weight: 700;
+    font-size: 1.05rem;
+}

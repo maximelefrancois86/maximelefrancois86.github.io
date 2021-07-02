@@ -1,0 +1,306 @@
+/*
+
+Theme Name: Connected Intelligence
+Version: 1.0
+Description: Theme pour le site Connected Intelligence
+Author: imageurs.com
+
+*/
+
+
+/* -------------- Reset pour mettre tous les navigateurs d'accord ---------------------- */
+
+
+/* -------------- FIN reset ----------------------------------------------------------- */
+
+
+/* ---------------------- HEADER --------------------------- */
+
+
+body div#espace_prive {background-color: #46525c; height:24px;}
+
+body header {position: relative;
+background-color: #38424a;padding-bottom: 7px;box-shadow: 0px 7px 13px 0px rgba(119, 119, 119, 0.83);
+-moz-box-shadow: 0px 7px 13px 0px rgba(119, 119, 119, 0.83);
+-webkit-box-shadow: 0px 7px 13px 0px rgba(119, 119, 119, 0.83);}
+
+body header div#logo {margin-top:14px;}
+
+body header div#logo a {color: transparent;}
+
+body header div#logo a img {margin-right:5px;width:81px;}
+
+
+/* ----------------------- Gérer les images -------------------- */
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 14px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 14px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 14px;
+}
+.wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	margin: 5px 5px 0;
+}
+.wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+
+/* ----------------------- Fin Gérer les images -----------------*/
+
+
+h2 {font-family: Helvetica, arial; font-weight: bold; font-size:30px}
+
+h3 {font-family: Helvetica, arial; font-weight: bold; font-size:20px; color: #38424a;}
+
+h3.proj {color: #f74a22; border-bottom: 1px solid #38424a;padding-bottom:5px;}
+
+h4 {font-family: Helvetica, arial; font-weight: bold; font-size:15px}
+
+h4.date {color:#8cc0c0;}
+
+p, table td p, table td {color: #453838; font-size:14px; font-weight:normal; font-family: arial; line-height: 19px;}
+
+table td ul {list-style: none;}
+
+div#topbar {background-image: url('images/ariane.jpg'); color: #f74a22;font-size: 25px; font-weight: bold;  padding-top: 15px;
+padding-bottom: 15px; font-family: arial;text-transform: uppercase;}
+
+article {padding-top: 30px; padding-bottom: 30px;}
+
+a {color: #f74a22;font-family: Helvetica, arial; font-size: 14px; font-weight: bold;text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+img {border:none;}
+
+/* ---------------------- ACCUEIL --------------------------- */
+
+div#presentation_vert {background-color: #8cc0c0;padding-top: 20px;padding-bottom: 20px;}
+
+div#research_issues {height: 109px; background-image:url('images/bandes.jpg');background-repeat: repeat-x;background-position: bottom;}
+
+div#research_issues p {text-align: center;margin-top: 35px;}
+
+div#trois_encarts {margin-top: 55px;}
+
+div#accueil_bas {background-color:#38424a; padding-top: 35px; margin-top: 30px;}
+
+/*
+ACTUS
+*/
+
+div#actus {border-bottom: 1px solid #f74a23; padding-bottom: 10px;padding-top: 10px;}
+
+div#accueil_bas div.actu { border-bottom: 1px solid #f74a23; padding-bottom: 10px;}
+
+div#actus a {text-decoration: none;}
+
+/* ---------------------- FIN ACCUEIL ----------------------- */
+
+
+/* ------------------------ DEMO -------------------------- */
+
+div#demo {  border: 1px solid #f74a23;
+  margin-left: -2px;
+  margin-bottom: 15px;
+  height: 226px;
+  padding: 5px;
+}
+
+/* ---------------------- FIN DEMO ------------------------ */
+
+
+
+/* ------------------------ EVENTS -------------------------- */
+
+div#events {border-bottom: 1px solid #f74a23; padding-bottom: 20px;  margin-bottom: 20px;}
+
+div#events a.lien_events {background-color: #f74a23; padding:7px}
+
+/* ---------------------- FIN EVENTS ------------------------ */
+
+
+
+
+
+/* ------------------------- PROJECTS -------------------------- */
+
+div#bordure {    background-image: url('images/ariane'); height:15px; margin-bottom:30px;}
+
+div#projects {margin-bottom:20px;}
+
+/* ---------------------- FIN PROJECTS ------------------------ */
+
+
+
+/* ------------------------- PUBLICATIONS -------------------------- */
+
+div#formulaire {margin-bottom: 30px;}
+
+/* ---------------------- FIN PUBLICATIONS ------------------------ */
+
+
+
+/*------------------------ PAGINATION -------------------------------*/
+
+div.ci_pagination {margin-bottom:20px; height: 25px;}
+div.ci_pagination ul.page-numbers li {padding-bottom: 2px;font-size: 20px; font-family: Helvetica, arial;float:left;  background-color:#f74a22; margin-right: 5px; color:black; padding-top:4px; padding-left:5px; padding-right:5px;}
+div.ci_pagination ul.page-numbers li a{color:black; padding-top: 4px;}
+div.ci_pagination ul.page-numbers {list-style:none;}
+
+
+/* ---------------------- FIN PAGINATION ------------------------ */
+
+
+
+
+
+/* ---------------------- FOOTER --------------------------- */
+
+footer {background-color: #38424a; padding-top: 25px; padding-bottom: 25px;}
+
+footer div#contact{padding-top:25px;}
+
+footer div#contact div.cont{margin-bottom: 7px; width: 87%; float: right;height:15px;background-image: url('images/back-cont.jpg'); background-position: center; background-repeat: repeat-x;}
+
+footer a.contact {margin-left: -74px; position: absolute; color:#f74a23;font-family: Helvetica, arial; font-weight: bold; font-size: 14px; text-decoration: none;}
+
+footer a.contact:hover {text-decoration: underline;}
+
+footer nav ul {list-style: none;}
+
+footer nav ul li {float: left; border-right: 1px solid #f74a23; padding-right: 17px; padding-left: 17px;}
+
+footer nav ul li#menu-item-123 {border-right: none;}
+
+footer nav ul li a{color: black; font-family: Helvetica, arial; font-weight: bold; font-size: 13px; text-decoration: none;}
+
+footer nav ul li a:hover{text-decoration: underline;}
+
+/* -------------------- FIN FOOTER ------------------------ */
+
+
+/*---------- RESOLUTION ECRAN : 959px ----------------*/
+@media only screen and (max-width: 959px) {
+
+body header nav ul li {  margin-right: 15px;  margin-left: 15px;}
+
+body header div#logo a img{width: 66px;}
+}
+
+/*---------- FIN RESOLUTION ECRAN : 959px ----------------*/
+
+
+/*---------- RESOLUTION ECRAN : 767px ----------------*/
+
+
+@media only screen and (max-width: 767px) {
+
+h1 {text-align: center;}
+
+body header div#logo {  margin-top: -15px;  text-align: center;}
+
+body header div#logo a img {  width: 81px;}
+
+footer img {width:200px !important;}
+
+div#trois_encarts div.grid_8 {margin-bottom:25px;}
+
+div#accueil_bas div#tweets {margin-top:54px;}
+
+footer nav ul li {  padding-right: 12px;  padding-left: 12px;}
+
+footer a.contact {  margin-left: -74px;}
+
+footer div#contact div.cont {  width: 82%;}
+
+article div.grid_12 {margin-bottom: 20px;}
+
+
+/* ---menu reponsive --*/
+
+	body header nav {border:none; text-align:center; margin-left: 65px;}
+
+	body header nav .trigger{
+    	display:block;
+        cursor:pointer;
+        padding:20px;
+        background:transparent url('images/icone-responsive.png') 79% 50% no-repeat;
+    }
+
+    body header nav.responsive-menu.open .trigger {background-color:transparent;}
+
+	body header nav ul {height: 350px;}
+     
+    body header nav ul li ul.sub-menu { background-color:none; position: relative; margin-top: 12px;display: block !important;height: 79px;}
+
+    body header nav.responsive-menu ul li {
+	float: none;
+	width: auto;
+	display: block;
+	text-align: center;
+	background-image:none; 
+	background-color:#f74a23; 
+	padding-top: 10px;
+	}
+
+	body header nav.responsive-menu ul li#menu-item-21 { margin-top: 80px;}
+
+	body header nav.responsive-menu ul li a:hover, body header nav.responsive-menu ul li:hover {
+	background-color: #4e5861;
+	}
+
+	body header nav ul li ul.sub-menu li { padding: 0px; border-bottom:none; padding-top: 10px;
+  	margin-top: 0px;}
+
+    body header nav.responsive-menu ul li a {color: #ffffff; padding-left:0px; padding-bottom: 0px;}
+
+
+
+/* ---menu reponsive --*/
+
+}
+
+/*---------- FIN RESOLUTION ECRAN : 767px ----------------*/
+
+
+/*---------- RESOLUTION ECRAN : 480px ----------------*/
+
+@media only screen and (max-width: 480px) {
+
+h1 img {  width: 307px;}
+
+footer div#contact {display: none;}
+
+div#tweets img {display: none;}
+}
+
+/*---------- FIN RESOLUTION ECRAN : 480px ----------------*/

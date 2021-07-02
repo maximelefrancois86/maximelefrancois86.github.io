@@ -1,0 +1,181 @@
+/****************************************************************************************************************
+ * GRID 960px, 24 columns
+ * Max width, 960px
+ * Media queries for 959px, 767px, 480px
+ ****************************************************************************************************************/
+
+/***** Standard 960px *****/
+
+	.row 								{ position: relative; margin:0 auto; width:960px; }
+	.row .row 							{ margin:0 -10px 0 -10px; width:auto; display:inline-block; }
+
+	.grid_1								{ width:20px;  margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_2 							{ width:60px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_3 							{ width:100px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_4 							{ width:140px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_5 							{ width:180px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }		
+	.grid_6 							{ width:220px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_7 							{ width:260px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_8 							{ width:300px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_9								{ width:340px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_10							{ width:380px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_11							{ width:420px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_12							{ width:460px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_13							{ width:500px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_14							{ width:540px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_15							{ width:580px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_16							{ width:620px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_17							{ width:660px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_18							{ width:700px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_19							{ width:740px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_20							{ width:780px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_21							{ width:820px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_22							{ width:860px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_23							{ width:900px; margin:0 10px 0 10px; overflow:hidden; float:left; display:inline; }
+	.grid_24							{ width:960px; margin:0; overflow:none; float:left; display:inline; }
+	
+	.space_1							{ margin-left:40px; }
+	.space_2							{ margin-left:80px; }
+	.space_3 							{ margin-left:120px; }
+	.space_4 							{ margin-left:160px; }
+	.space_5 							{ margin-left:200px; }
+	.space_6 							{ margin-left:240px; }
+	.space_7 							{ margin-left:280px; }
+	.space_8 							{ margin-left:320px; }
+	.space_9							{ margin-left:360px; }
+	.space_10							{ margin-left:400px; }
+	.space_11							{ margin-left:440px; }
+	.space_12							{ margin-left:480px; }
+	.space_13							{ margin-left:520px; }
+	.space_14							{ margin-left:560px; }
+	.space_15							{ margin-left:600px; }
+	.space_16							{ margin-left:640px; }
+	.space_17							{ margin-left:680px; }
+	.space_18							{ margin-left:720px; }
+	.space_19							{ margin-left:760px; }
+	.space_20							{ margin-left:800px; }
+	.space_21							{ margin-left:840px; }
+	.space_22							{ margin-left:880px; }
+	.space_23							{ margin-left:920px; }
+
+/***** iPad Smaller than 959px *****/
+@media only screen and (max-width: 959px) {
+
+	.row 								{ margin:0 auto; width:768px; }
+	.row .row 							{ margin:0 -14px 0 -14px; width:auto; display:inline-block; }
+		
+	.grid_1								{ width:20px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_2 							{ width:52px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_3 							{ width:84px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_4 							{ width:116px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_5 							{ width:148px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }		
+	.grid_6 							{ width:180px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_7 							{ width:212px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_8 							{ width:244px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_9								{ width:276px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_10							{ width:308px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_11							{ width:340px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_12							{ width:372px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_13 							{ width:404px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_14 							{ width:436px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_15 							{ width:468px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_16 							{ width:500px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }		
+	.grid_17 							{ width:532px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_18 							{ width:564px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_19 							{ width:596px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_20							{ width:628px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_21							{ width:660px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_22							{ width:692px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_23							{ width:724px; margin:0 6px 0 6px; overflow:hidden; float:left; display:inline; }
+	.grid_24							{ width:768px; margin:0; overflow:hidden; float:left; display:inline; }
+	
+	.space_1							{ margin-left:32px; }
+	.space_2							{ margin-left:64px; }
+	.space_3 							{ margin-left:96px; }
+	.space_4 							{ margin-left:128px; }
+	.space_5 							{ margin-left:160px; }
+	.space_6 							{ margin-left:192px; }
+	.space_7 							{ margin-left:224px; }
+	.space_8 							{ margin-left:256px; }
+	.space_9							{ margin-left:288px; }
+	.space_10							{ margin-left:320px; }
+	.space_11							{ margin-left:352px; }
+	.space_12							{ margin-left:384px; }
+	.space_13							{ margin-left:416px; }
+	.space_14							{ margin-left:448px; }
+	.space_15							{ margin-left:480px; }
+	.space_16							{ margin-left:512px; }
+	.space_17							{ margin-left:544px; }
+	.space_18							{ margin-left:576px; }
+	.space_19							{ margin-left:608px; }
+	.space_20							{ margin-left:640px; }
+	.space_21							{ margin-left:672px; }
+	.space_22							{ margin-left:704px; }
+	.space_23							{ margin-left:736px; }
+}
+
+/***** iPhone (landscape) *****/
+@media only screen and (max-width: 767px) {
+
+	.row 								{ margin:0 auto; width:480px; }
+	.row .row 							{ margin:0; width:auto; display:inline-block; }
+		
+	.grid_1, .grid_2, .grid_3,
+	.grid_4, .grid_5, .grid_6,
+	.grid_7, .grid_8, .grid_9,
+	.grid_10, .grid_11, .grid_12,
+	.grid_13, .grid_14, .grid_15,
+	.grid_16, .grid_17, .grid_18,
+	.grid_19, .grid_20, .grid_21,
+	.grid_22, .grid_23, .grid_24		{ width:480px; margin:10px 0 0 0; float:left; display:inline; }
+
+	.space_1, .space_2, .space_3,
+	.space_4, .space_5, .space_6,
+	.space_7, .space_8, .space_9,
+	.space_10, .space_11, .space_12,
+	.space_13, .space_14, .space_15,
+	.space_16, .space_17, .space_18,
+	.space_19, .space_20, .space_21,
+	.space_22, .space_23				{ margin-left:0; }
+				
+}
+
+/***** iPhone (portrait) *****/
+@media only screen and (max-width: 480px) {
+
+	.row 								{ margin:0 auto; width:320px; }
+	.row .row 							{ margin:0; width:auto; display:inline-block; }
+	
+	.grid_1, .grid_2, .grid_3,
+	.grid_4, .grid_5, .grid_6,
+	.grid_7, .grid_8, .grid_9,
+	.grid_10, .grid_11, .grid_12,
+	.grid_13, .grid_14, .grid_15,
+	.grid_16, .grid_17, .grid_18,
+	.grid_19, .grid_20, .grid_21,
+	.grid_22, .grid_23, .grid_24		{ width:320px; margin:10px 0 0 0; float:left; display:inline; }
+	
+	.space_1, .space_2, .space_3,
+	.space_4, .space_5, .space_6,
+	.space_7, .space_8, .space_9,
+	.space_10, .space_11, .space_12,
+	.space_13, .space_14, .space_15,
+	.space_16, .space_17, .space_18,
+	.space_19, .space_20, .space_21,
+	.space_22, .space_23				{ margin-left:0; }
+	
+}
+
+/***** Clean up on isle 6 *****/
+
+	.container:after 					{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; } 
+	
+	.clearfix:before,
+	.clearfix:after,
+	.row:before,
+	.row:after 							{ content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+	
+	.row:after,	.clearfix:after 		{ clear:both; }
+	.row, 
+	.clearfix 							{ zoom:1; }
+	.clear 								{ clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;	}
