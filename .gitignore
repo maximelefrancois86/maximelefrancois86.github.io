@@ -1,0 +1,12 @@
+# Working notes and discussions with Claude: kept locally, never published
+notes/
+CLAUDE.md
+.claude/
+
+# Local tooling
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+desktop.ini

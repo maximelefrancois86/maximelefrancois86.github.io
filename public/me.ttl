@@ -1,0 +1,91 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix max: <http://maxime-lefrancois.info/me#> .
+
+<https://maxime-lefrancois.info/me.ttl> a foaf:PersonalProfileDocument ;
+   foaf:maker max: ;
+   foaf:primaryTopic max: ;
+   dct:modified "2026-10-28" .
+
+max: a foaf:Person ;
+   foaf:name "Maxime Lefrançois" ;
+   foaf:familyName "Lefrançois" ;
+   foaf:givenName "Maxime" ;
+   foaf:title "Dr" ;
+   foaf:nick "maximelefrancois86" ;
+   foaf:homepage <https://maxime-lefrancois.info/> ;
+   foaf:img <https://maxime-lefrancois.info/assets/portrait.jpg> ;
+   foaf:mbox <mailto:maxime.lefrancois@emse.fr> ;
+   foaf:phone <tel:+33477426640> ;
+   foaf:publications <https://maxime-lefrancois.info/research/publications.html> ;
+   owl:sameAs <https://orcid.org/0000-0001-9814-8991> ;
+   rdfs:seeAlso <https://cv.hal.science/mlefranc> , <https://dblp.org/pid/76/11266.html> ,
+      <https://scholar.google.com/citations?user=3GfpyksAAAAJ> , <https://github.com/maximelefrancois86> ;
+   org:memberOf max:emse , max:limos ;
+   foaf:topic_interest max:ontology-engineering , max:semantic-interoperability , max:saref ;
+   foaf:currentProject max:edis , max:saref , max:dakai ;
+   foaf:pastProject max:stf556 , max:stf578 , max:stf653 , max:stf641 , max:accord , max:coswot ,
+      max:hyperagents , max:seas , max:sparqlgenerate , max:lindt , max:phd .
+
+max:emse a org:Organization ;
+   foaf:name "Mines Saint-Étienne, Institut Mines-Télécom" ;
+   foaf:homepage <https://www.mines-stetienne.fr/> .
+
+max:limos a org:Organization ;
+   foaf:name "LIMOS, UMR CNRS 6158" ;
+   foaf:homepage <https://limos.fr/> .
+
+max:ontology-engineering rdfs:label "Ontology engineering"@en .
+max:semantic-interoperability rdfs:label "Semantic interoperability"@en .
+
+max:saref a foaf:Project ;
+   dct:title "ETSI SAREF" , "Smart Applications REFerence ontology" ;
+   foaf:homepage <https://saref.etsi.org/> .
+
+max:edis a foaf:Project ;
+   dct:title "EDIS" , "Electro-mobility Data for Interdisciplinary Studies" ;
+   dct:description "One of the four projects of the PEPR MOBIDEC, France 2030 (ANR-24-PEMO-0002), 2026-2031."@en ;
+   foaf:homepage <https://cumin.univ-lille.fr/edis> .
+
+max:dakai a foaf:Project ;
+   dct:title "DAKAI" , "Data, Agents, Knowledge in Artificial Intelligence" ;
+   dct:description "Master's track of the Master Informatique, Université Jean Monnet and Mines Saint-Étienne, successor of CPS2 from 2027."@en ;
+   foaf:homepage <https://ci.mines-stetienne.fr/dakai/> .
+
+max:stf556 a foaf:Project ; dct:title "ETSI STF 556" ;
+   rdfs:seeAlso <https://portal.etsi.org/STF/STFs/STF-Homepages/STF556> .
+max:stf578 a foaf:Project ; dct:title "ETSI STF 578" ;
+   rdfs:seeAlso <https://portal.etsi.org/STF/STFs/STF-Homepages/STF578> .
+max:stf641 a foaf:Project ; dct:title "ETSI STF 641" , "SAREF Digital Twins" ;
+   rdfs:seeAlso <https://portal.etsi.org/xtfs/#/xTF/641> .
+max:stf653 a foaf:Project ; dct:title "ETSI STF 653" , "SAREF Patterns" ;
+   rdfs:seeAlso <https://portal.etsi.org/xtfs/#/xTF/653> .
+max:accord a foaf:Project ; dct:title "ACCORD" ;
+   foaf:homepage <https://accordproject.eu/> .
+max:coswot a foaf:Project ; dct:title "CoSWoT" , "Constrained Semantic Web of Things" ;
+   foaf:homepage <https://coswot.gitlab.io/> .
+max:hyperagents a foaf:Project ; dct:title "HyperAgents" ;
+   foaf:homepage <https://project.hyperagents.org/> .
+max:seas a foaf:Project ; dct:title "SEAS" , "Smart Energy Aware Systems" ;
+   foaf:homepage <https://w3id.org/seas/> .
+max:sparqlgenerate a foaf:Project ; dct:title "SPARQL-Generate" ;
+   foaf:homepage <https://ci.mines-stetienne.fr/sparql-generate/> .
+max:lindt a foaf:Project ; dct:title "Lindt" , "Linked Datatypes" ;
+   rdfs:seeAlso <https://w3id.org/lindt/spec.html> .
+
+max:phd a foaf:Project ;
+   dct:title "Meaning-Text Theory Lexical Semantic Knowledge Representation : Conceptualization, Representation, and Operationalization of Lexicographic Definitions"@en ;
+   dct:title "Représentation des connaissances sémantiques lexicales de la Théorie Sens-Texte : Conceptualisation, représentation, et opérationnalisation des définitions lexicographiques"@fr ;
+   dct:description """We present our research in applying knowledge engineering to linguistics. In particular, to linguistic predicates, linguistic representations, and lexicographic definitions of the Meaning-Text Theory (MTT). We adopt a three-step methodology.
+We first study the MTT conceptualization, and show how it should be extended to ease its formalization. We therefore justify the need of defining a new deep semantic, graph-based, representation level for the Meaning-Text model. We define the notion of deep semantic unit types and its actantial structure: a set of signed obligatory, optional or forbidden actant slots with lexicalized semantic roles as labels. We show that their hierarchical organization may correspond to a hierarchy of meanings, inside which actantial structures are inherited and specialized. We re-conceptualize lexicographic definitions at the deep semantic level, and at the level of dictionaries. Finally, we present a definition editor prototype based on graph direct manipulation, which will allow us, in future work, to integrate our formal model into explanatory combinatorial lexicographic projects.
+We then propose a knowledge representation formalism adapted for this conceptualization. We demonstrate that Description Logics and the Conceptual Graphs formalism do not fit our needs. This leads us to construct a new knowledge representation formalism: the Unit Graphs formalism.
+Finally, we operationalize the Unit Graphs formalism. We assign it a formal semantic model, which we create based on model theory and relational algebra. We then show that the reasoning decidability conditions match the intuitions that lexicographers have. We also provide an implementation using semantic web standards, which enable us to use existing architectures for sharing, interoperability, and knowledge querying over the web of lexical linked data."""@en ;
+   dct:description """Nous présentons notre recherche en ingénierie des connaissances appliquée à la linguistique. Plus particulièrement, aux prédicats linguistiques, aux représentations linguistiques, et aux définitions lexicographiques de la théorie linguistique Sens-Texte (TST). Nous adoptons une méthodologie en trois étapes.
+Nous étudions dans un premier temps la conceptualisation de la TST, et montrons en quoi elle devrait être étendue pour faciliter une formalisation ultérieure. Nous justifions en particulier la nécessité de définir un nouveau niveau de représentation sémantique profond, basé sur des graphes. Nous y définissons la notion de type d'unité sémantique profonde et sa structure actancielle: un ensemble de positions actancielles signées, qui peuvent être obligatoires, optionnelles, ou interdites, et étiquetées par des rôles sémantiques lexicalisés. Nous montrons que l'organisation hiérarchique des types d'unités sémantiques profondes peut correspondre à une hiérarchie de sens au sein de laquelle les structures actancielles sont héritées et spécialisées. Nous reconceptualisons les définitions lexicographiques au niveau sémantique profond, et au niveau du dictionnaire. Finalement, nous présentons un prototype d'éditeur de définitions basé sur la manipulation directe de graphes, qui permettera une intégration future de nos travaux dans des projets de lexicographie explicative et combinatoire.
+Ensuite, nous proposons un formalisme de représentation des connaissances adapté à cette conceptualisation. Nous démontrons que les logiques de description et le formalisme des Graphes Conceptuels ne sont pas adaptés pour représenter les connaissances de la TST. Nous construisons alors un nouveau formalisme de représentation des connaissances adapté, dit des Graphes d'Unités.
+Enfin nous étudions l'opérationnalisation du formalisme des Graphes d'Unités. Nous lui associons une sémantique formelle basée sur la théorie des modèles et l'algèbre relationnelle, et montrons que les conditions de décidabilité du raisonnement logique correspondent aux intuitions des lexicographes. Nous proposons également une implémentation du formalisme avec les standards du web sémantique, ce qui permet de profiter des architectures existantes pour le partage, l'interopérationnalisation, et l'interrogation des connaissances sur le web des données lexicales liées."""@fr ;
+   rdfs:seeAlso <https://maxime-lefrancois.info/research/phd.html> .
+
