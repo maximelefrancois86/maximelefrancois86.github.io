@@ -93,29 +93,25 @@
       <div class="wide">
 <!-- hal:start -->
 <p class="muted">127 documents in HAL, retrieved on 28 October 2026.</p>
-<fieldset class="filters" id="filters" hidden>
-  <legend>Show</legend>
-  <button type="button" data-filter="all" aria-pressed="true">All · 127</button>
-  <button type="button" data-filter="journal" aria-pressed="false">Journals · 10</button>
-  <button type="button" data-filter="conference" aria-pressed="false">Conferences · 73</button>
-  <button type="button" data-filter="chapter" aria-pressed="false">Books and chapters · 7</button>
-  <button type="button" data-filter="edited" aria-pressed="false">Edited volumes · 6</button>
-  <button type="button" data-filter="report" aria-pressed="false">Reports and preprints · 19</button>
-  <button type="button" data-filter="other" aria-pressed="false">Other · 12</button>
+<fieldset class="filters" id="pub-sort" hidden>
+  <legend>Group by</legend>
+  <button type="button" data-sort="year" aria-pressed="true">Year</button>
+  <button type="button" data-sort="type" aria-pressed="false">Type</button>
 </fieldset>
+<div id="pub-list" data-types="journal conference chapter edited report other">
   <div class="pub-group">
     <h3 class="pub-year">2026</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2026">
         <span class="title">AEC3PO: A Knowledge Model for Machine Executable Construction Regulations</span>
         <span class="authors">Amna Dridi, Panagiotis Patlakas, <b>Maxime Lefrançois</b>, Thomas Beach, Petr Hradil, Edlira Vakaj</span>
-        <span class="venue"><span class="tag">Journal</span>Building Research and Information</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2026</span>Building Research and Information</span>
         <span class="acts"><a href="https://hal.science/hal-05786902v1">HAL</a> <a href="https://hal.science/hal-05786902/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2026">
         <span class="title">Vers une modélisation formelle de la négociation des contrats d&#x27;accès aux données dans les espaces de données</span>
         <span class="authors">Khensa Daoudi, <b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>37èmes journées de l’Ingénierie des Connaissances, Arras</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2026</span>37èmes journées de l’Ingénierie des Connaissances, Arras</span>
         <span class="acts"><a href="https://hal.science/hal-05698083v1">HAL</a> <a href="https://hal.science/hal-05698083/document">PDF</a></span>
       </li>
     </ol>
@@ -123,52 +119,52 @@
   <div class="pub-group">
     <h3 class="pub-year">2025</h3>
     <ol class="pubs">
-      <li data-type="conference">
-        <span class="title">Modèle de Données Sémantiques Commun pour l&#x27;Espace de Données Européen de l&#x27;Energie Omega-X</span>
-        <span class="authors">Fatma-Zohra Hannou, Lina Nachabe, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>36ème Journées Francophones d’Ingénierie des Connaissances, Dijon</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-05163390v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-05163390/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Facilitating the use of Physics-Based Simulations on Embedded Devices by running FMUs from MicroPython</span>
-        <span class="authors">Tom Reynaud, Erfan Enferad, <b>Maxime Lefrancois</b></span>
-        <span class="venue"><span class="tag">Conference</span>16th International Modelica &amp; FMI Conference, Lucerne</span>
-        <span class="acts"><a href="https://hal.science/hal-05248611v1">HAL</a> <a href="https://doi.org/10.3384/ecp218525">DOI</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2025">
         <span class="title">OLIVAW: ACIMOV&#x27;s GitHub robot assisting agile collaborative ontology development</span>
         <span class="authors">Nicolas Robert, Fabien Gandon, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>24th IEEE /WIC International Conference on Web Intelligence and Intelligent Agent Technology, London</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2025</span>24th IEEE /WIC International Conference on Web Intelligence and Intelligent Agent Technology, London</span>
         <span class="acts"><a href="https://hal.science/hal-05291789v1">HAL</a> <a href="https://hal.science/hal-05291789/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2025">
         <span class="title">Web of Simulation Ontology-Driven Framework (WoSO-DF) for Integrating Building Performance Simulations and IoT Systems for Smart Energy Management</span>
         <span class="authors">Zehor Hounas, <b>Maxime Lefrançois</b>, Bruno Traverson, Antoine Acolant, Hasan Sayegh, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>2025 European Conference on Computing in Construction, Porto</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2025</span>2025 European Conference on Computing in Construction, Porto</span>
         <span class="acts"><a href="https://hal.science/hal-05551801v1">HAL</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="conference" data-group="Conferences" data-year="2025">
+        <span class="title">Modèle de Données Sémantiques Commun pour l&#x27;Espace de Données Européen de l&#x27;Energie Omega-X</span>
+        <span class="authors">Fatma-Zohra Hannou, Lina Nachabe, <b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2025</span>36ème Journées Francophones d’Ingénierie des Connaissances, Dijon</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-05163390v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-05163390/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2025">
+        <span class="title">Facilitating the use of Physics-Based Simulations on Embedded Devices by running FMUs from MicroPython</span>
+        <span class="authors">Tom Reynaud, Erfan Enferad, <b>Maxime Lefrancois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2025</span>16th International Modelica &amp; FMI Conference, Lucerne</span>
+        <span class="acts"><a href="https://hal.science/hal-05248611v1">HAL</a> <a href="https://doi.org/10.3384/ecp218525">DOI</a></span>
+      </li>
+      <li data-type="edited" data-group="Edited volumes" data-year="2025">
         <span class="title">Post-actes de la conférence Ingénierie des Connaissances (IC 2021-2022-2023)</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fatiha Saïs, Cassia Trojahn</span>
-        <span class="venue"><span class="tag">Special issue</span>Revue Ouverte d&#x27;Intelligence Artificielle, vol. 6(1-2), pp. 200</span>
+        <span class="venue"><span class="tag">Special issue</span><span class="tag pub-y">2025</span>Revue Ouverte d&#x27;Intelligence Artificielle, vol. 6(1-2), pp. 200</span>
         <span class="acts"><a href="https://hal.science/hal-05376657v1">HAL</a> <a href="https://doi.org/10.5802/roia.90fr">DOI</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2025">
         <span class="title">Automatic Creation of Knowledge Graphs From IEC 61850-Tagged Datasets for Renewable Energy Systems</span>
         <span class="authors">Lina Nachabe, <b>Maxime Lefrançois</b>, Cyril Effantin, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Poster</span>SEMANTiCS 2025 : 21st International Conference on Semantic Systems, Vienne</span>
+        <span class="venue"><span class="tag">Poster</span><span class="tag pub-y">2025</span>SEMANTiCS 2025 : 21st International Conference on Semantic Systems, Vienne</span>
         <span class="acts"><a href="https://hal.science/hal-05244527v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2025">
         <span class="title">Orchestrating an interoperable sovereign federated Multi-vector Energy data space built on open standards and ready for GAia-X D4.4 Data ingestion, Common Information Model and semantic interoperability. Final version</span>
         <span class="authors">Éric Lambert, Bruno Traverson, Marie Jubault, Alzennyr Gomes da Silva, Lina Nachabe Ismail, Henon Lamboro, …, Javier Valino</span>
-        <span class="venue"><span class="tag">Report</span></span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2025</span></span>
         <span class="acts"><a href="https://hal.science/hal-05326458v1">HAL</a> <a href="https://hal.science/hal-05326458/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2025">
         <span class="title">Possible Hyperworlds: representing Kripke models in RDF</span>
         <span class="authors">Christopher Leturc, Fabien Gandon, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Preprint</span></span>
+        <span class="venue"><span class="tag">Preprint</span><span class="tag pub-y">2025</span></span>
         <span class="acts"><a href="https://hal.science/hal-05329535v1">HAL</a> <a href="https://hal.science/hal-05329535/document">PDF</a></span>
       </li>
     </ol>
@@ -176,88 +172,88 @@
   <div class="pub-group">
     <h3 class="pub-year">2024</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2024">
         <span class="title">A Survey on IoT Programming Platforms: A Business-Domain Experts Perspective</span>
         <span class="authors">Fatma-Zohra Hannou, <b>Maxime Lefrançois</b>, Pierre Jouvelot, Victor Charpenay, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Journal</span>ACM Computing Surveys</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2024</span>ACM Computing Surveys</span>
         <span class="acts"><a href="https://hal.science/hal-04764936v1">HAL</a> <a href="https://hal.science/hal-04764936/document">PDF</a> <a href="https://doi.org/10.1145/3699954">DOI</a></span>
       </li>
-      <li data-type="conference">
-        <span class="title">Kind of X and X of Interest: An Ontology Design Pattern to Reconcile Web of Thing Ontologies</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Catherine Roussey, Fatma-Zohra Hannou, Victor Charpenay, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>15. Workshop on Ontology Design and Patterns (WOP 2024), Baltimore</span>
-        <span class="acts"><a href="https://hal.science/hal-04765079v1">HAL</a> <a href="https://hal.science/hal-04765079/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Web of Simulation ontology (WoSO): Integration of Building Performance Simulations in IoT Systems</span>
         <span class="authors">Zehor Hounas, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Bruno Traverson</span>
-        <span class="venue"><span class="tag">Conference</span>LDAC2024 - Linked Data in Architecture and Construction, Bochum</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>LDAC2024 - Linked Data in Architecture and Construction, Bochum</span>
         <span class="acts"><a href="https://hal.science/hal-04604267v1">HAL</a> <a href="https://hal.science/hal-04604267/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
+        <span class="title">Kind of X and X of Interest: An Ontology Design Pattern to Reconcile Web of Thing Ontologies</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Catherine Roussey, Fatma-Zohra Hannou, Victor Charpenay, Antoine Zimmermann</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>15. Workshop on Ontology Design and Patterns (WOP 2024), Baltimore</span>
+        <span class="acts"><a href="https://hal.science/hal-04765079v1">HAL</a> <a href="https://hal.science/hal-04765079/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">La méthodologie ACIMOV pour l&#x27;intégration agile et continue des modules ontologiques</span>
         <span class="authors">Fatma-Zohra Hannou Hannou, Victor Charpenay, <b>Maxime Lefrançois</b>, Catherine Roussey, Antoine Zimmermann, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>35. Journées francophones d&#x27;Ingénierie des Connaissances (IC 2024) @ Plate-Forme Intelligence Artificielle (PFIA 2024), pp. 127-128, La Rochelle</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>35. Journées francophones d&#x27;Ingénierie des Connaissances (IC 2024) @ Plate-Forme Intelligence Artificielle (PFIA 2024), pp. 127-128, La Rochelle</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04636109v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04636109/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Toward Agile Interaction Model based ontology development Methodology (AIME) for FAIR European data spaces</span>
         <span class="authors">Lina Nachabe, Fatma-Zohra Hannou, <b>Maxime Lefrançois</b>, Marie Jubault</span>
-        <span class="venue"><span class="tag">Conference</span>FAIR Principles for Ontologies and Medatata in Knowledge Management (FOAM), Enschede</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>FAIR Principles for Ontologies and Medatata in Knowledge Management (FOAM), Enschede</span>
         <span class="acts"><a href="https://hal.science/hal-04765023v1">HAL</a> <a href="https://hal.science/hal-04765023/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Intégration de SOSA/SSN, SAREF, et TD dans l’ontologie CoSWoT</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Catherine Roussey, Fatma-Zohra Hannou, Victor Charpenay</span>
-        <span class="venue"><span class="tag">Conference</span>35. Journées francophones d&#x27;Ingénierie des Connaissances (IC 2024) @ Plate-Forme Intelligence Artificielle (PFIA 2024), pp. 92-101, La Rochelle</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>35. Journées francophones d&#x27;Ingénierie des Connaissances (IC 2024) @ Plate-Forme Intelligence Artificielle (PFIA 2024), pp. 92-101, La Rochelle</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04636364v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04636364/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Ontologie de Maintenance des Bâtiments et Capacités des Larges Modèles de Langage (LLM) pour le Peuplement</span>
         <span class="authors">Joel Mba Kouhoue, <b>Maxime Lefrançois</b>, Alexis Lesage, Jerry Lonlac, Arnaud Doniec, Stéphane Lecoeuche</span>
-        <span class="venue"><span class="tag">Conference</span>IC 2024 - PFIA 2024 - 35es Journées francophones d&#x27;Ingénierie des Connaissances @ Plate-Forme Intelligence Artificielle, pp. 103-106, La Rochelle</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>IC 2024 - PFIA 2024 - 35es Journées francophones d&#x27;Ingénierie des Connaissances @ Plate-Forme Intelligence Artificielle, pp. 103-106, La Rochelle</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04636431v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04636431/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Formalization of building codes and regulations in knowledge graphs</span>
         <span class="authors">Gonçal Costa, Edlira Vakaj, Thomas Beach, Rita Lavikka, <b>Maxime Lefrançois</b>, Antoine Zimmermann, …, Nataliya Keberle</span>
-        <span class="venue"><span class="tag">Conference</span>Digital Building Permit conference 2024, pp. 120-125, Barcelone</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>Digital Building Permit conference 2024, pp. 120-125, Barcelone</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04919653v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">Latest SAREF specification updates, versioning</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Workshop &#x27;&#x27;Enhancing IoT Semantic Interoperability by SAREF for Digital Twins&#x27;&#x27;, Bruxelles</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>Workshop &#x27;&#x27;Enhancing IoT Semantic Interoperability by SAREF for Digital Twins&#x27;&#x27;, Bruxelles</span>
         <span class="acts"><a href="https://hal.science/hal-04719226v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2024">
         <span class="title">OMEGA-X: Energy Data Space for improving efficiency of electric power systems leveraging semantic interoperability and AI</span>
         <span class="authors">Erik Maqueda, Javier Valino, Olivier Genest, Valentina Janev, Bruno Traverson, <b>Maxime Lefrançois</b>, …, Antonio Kung</span>
-        <span class="venue"><span class="tag">Conference</span>CIGRE 2024 : Study committees: Information Systems, Telecommunications and Cybersecurity (D2), pp. 10344, Paris</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2024</span>CIGRE 2024 : Study committees: Information Systems, Telecommunications and Cybersecurity (D2), pp. 10344, Paris</span>
         <span class="acts"><a href="https://hal.science/hal-04947461v1">HAL</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2024">
         <span class="title">Etude analytique d’ontologies pour le projet ACCORD</span>
         <span class="authors">Thamer Mecharnia, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Mihaela Juganaru</span>
-        <span class="venue"><span class="tag">Chapter</span>BIM computationnel, des données vers l&#x27;IA : Ingénierie &amp; architecture, enseignement &amp; recherche</span>
+        <span class="venue"><span class="tag">Chapter</span><span class="tag pub-y">2024</span>BIM computationnel, des données vers l&#x27;IA : Ingénierie &amp; architecture, enseignement &amp; recherche</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04387204v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2024">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; SAREF reference ontology patterns</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Report</span>pp. p 43</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2024</span>pp. p 43</span>
         <span class="acts"><a href="https://hal.science/hal-04999523v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2024">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; SAREF Development Framework and Workflow, Streamlining the Development of SAREF and its Extensions</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Report</span>pp. p 41</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2024</span>pp. p 41</span>
         <span class="acts"><a href="https://hal.science/hal-04999509v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2024">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; Smart Applications ; Reference Ontology and oneM2M Mapping</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Raúl García Castro, María Poveda-Villalón, Cornelis Bouter, Giulia Biagioni, Laura Daniele, David Gnabasik</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 41</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2024</span>pp. p 41</span>
         <span class="acts"><a href="https://hal.science/hal-04999531v1">HAL</a></span>
       </li>
     </ol>
@@ -265,100 +261,100 @@
   <div class="pub-group">
     <h3 class="pub-year">2023</h3>
     <ol class="pubs">
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2023">
         <span class="title">Pour une interopérabilité sémantique des applications IoT sur les espaces européens des données</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Outreach</span></span>
+        <span class="venue"><span class="tag">Outreach</span><span class="tag pub-y">2023</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04151067v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">Content Negotiation in a Decentralised Semantic Context Utilising Equivalence Links</span>
         <span class="authors">Yousouf Taghzouti, Antoine Zimmermann, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>1st International Workshop on Data Management for Knowledge Graphs, Hersonissos</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>1st International Workshop on Data Management for Knowledge Graphs, Hersonissos</span>
         <span class="acts"><a href="https://hal.science/hal-04119138v1">HAL</a> <a href="https://hal.science/hal-04119138/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">Semantisation of Rules for Automated Compliance Checking</span>
         <span class="authors">Edlira Vakaj, <b>Maxime Lefrançois</b>, Amna Dridi, Thomas Beach, Mohamed Gaber, Gonçal Costa Jutglar, He Tan</span>
-        <span class="venue"><span class="tag">Conference</span>LDAC2023 - Linked Data in Architecture and Construction Week, Matera</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>LDAC2023 - Linked Data in Architecture and Construction Week, Matera</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04079411v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">The SAREF Pipeline and Portal—An Ontology Verification Framework</span>
         <span class="authors"><b>Maxime Lefrançois</b>, David Gnabasik</span>
-        <span class="venue"><span class="tag">Conference</span>The Semantic Web – ISWC 2023, vol. 14266, pp. 134-151, Athenes</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>The Semantic Web – ISWC 2023, vol. 14266, pp. 134-151, Athenes</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04277942v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04277942/document">PDF</a> <a href="https://doi.org/10.1007/978-3-031-47243-5_8">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">Modular Knowledge integration for Smart Building Digital Twins</span>
         <span class="authors">Isaac Fatokun, Arun Raveendran Nair Sheela, Thamer Mecharnia, <b>Maxime Lefrançois</b>, Victor Charpenay, Fabien Badeig, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>LDAC’23: 11th Linked Data in Architecture and Construction Workshop, Matera</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>LDAC’23: 11th Linked Data in Architecture and Construction Workshop, Matera</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04086955v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04086955/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">The ETSI STF 653 roadmap towards the consolidation and factorization of SAREF with ontology patterns</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>ETSI IoT Conference 2023 (ETSI IoT Week 2023), Sophia Antipolis</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>ETSI IoT Conference 2023 (ETSI IoT Week 2023), Sophia Antipolis</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04159947v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">SAREF4SYST: a SAREF Reference Ontology Pattern for Representing Systems and their Interconnections</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>WOP2023: 14th Workshop on Ontology Design and Patterns, at the International Semantic Web Conference, Athenes</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>WOP2023: 14th Workshop on Ontology Design and Patterns, at the International Semantic Web Conference, Athenes</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04278004v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04278004/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">Governance of the ETSI SAREF suite of ontologies: past, current situation, and the road ahead” by SAREF</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Semantic Artefact Governance Workshop, Lecce</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>Semantic Artefact Governance Workshop, Lecce</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04224943v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2023">
         <span class="title">The ACIMOV Methodology: Agile and Continuous Integration for Modular Ontologies and Vocabularies</span>
         <span class="authors">Fatma-Zohra Hannou, Victor Charpenay, <b>Maxime Lefrançois</b>, Catherine Roussey, Antoine Zimmermann, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>MK 2023 - 2. Workshop on Modular Knowledge  associated with FOIS 2023 - 13.  International Conference on Formal Ontology in Information Systems, Sherbrooke</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2023</span>MK 2023 - 2. Workshop on Modular Knowledge  associated with FOIS 2023 - 13.  International Conference on Formal Ontology in Information Systems, Sherbrooke</span>
         <span class="acts"><a href="https://hal.science/hal-04187236v1">HAL</a> <a href="https://hal.science/hal-04187236/document">PDF</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2023">
         <span class="title">The ETSI SAREF Ontology for Smart Applications: A Long Path of Development and Evolution</span>
         <span class="authors">Raúl García Castro, <b>Maxime Lefrançois</b>, María Poveda-Villalón, Laura Daniele</span>
-        <span class="venue"><span class="tag">Chapter</span>Energy Smart Appliances: Applications, Methodologies, and Challenges</span>
+        <span class="venue"><span class="tag">Chapter</span><span class="tag pub-y">2023</span>Energy Smart Appliances: Applications, Methodologies, and Challenges</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04123151v1">HAL</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2023">
         <span class="title">The urdflib Library for MicroPython: Manipulating RDF on Constrained Devices</span>
         <span class="authors">Mohsen Hadavi, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Poster</span>The Semantic Web – ISWC 2023, Athenes</span>
+        <span class="venue"><span class="tag">Poster</span><span class="tag pub-y">2023</span>The Semantic Web – ISWC 2023, Athenes</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-04277980v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-04277980/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2023">
         <span class="title">Orchestrating an interoperable sovereign federated Multi-vector Energy data space built on open standards and ready for GAia-X D4.1 Data ingestion, Common Information Model and semantic interoperability</span>
         <span class="authors">Éric Lambert, Bruno Traverson, Alzennyr Gomes da Silva, Lina Nachabe Ismail, <b>Maxime Lefrançois</b>, Olivier Genest, …, Javier Valino</span>
-        <span class="venue"><span class="tag">Report</span>pp. 159</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2023</span>pp. 159</span>
         <span class="acts"><a href="https://hal.science/hal-05149714v1">HAL</a> <a href="https://hal.science/hal-05149714/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2023">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; Study for SAREF ontology patterns and usage guidelines</span>
         <span class="authors"><b>Maxime Lefrançois</b>, David Gnabasik</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 44</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2023</span>pp. p 44</span>
         <span class="acts"><a href="https://hal.science/hal-04999539v1">HAL</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2023">
         <span class="title">MicroPython urdflib</span>
         <span class="authors">Mohsen Hadavi, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Software</span></span>
+        <span class="venue"><span class="tag">Software</span><span class="tag pub-y">2023</span></span>
         <span class="acts"><a href="https://hal.science/hal-05056482v1">HAL</a> <a href="https://hal.science/hal-05056482/document">PDF</a> <a href="https://doi.org/10.5281/zenodo.7913534">DOI</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2023">
         <span class="title">SAREF Pipeline</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Omar Qawasmeh</span>
-        <span class="venue"><span class="tag">Software</span></span>
+        <span class="venue"><span class="tag">Software</span><span class="tag pub-y">2023</span></span>
         <span class="acts"><a href="https://hal.science/hal-05052555v1">HAL</a> <a href="https://hal.science/hal-05052555/document">PDF</a> <a href="https://doi.org/10.5281/zenodo.7913534">DOI</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2023">
         <span class="title">A Survey on IoT Programming Platforms: A Business-Domain Experts Perspective</span>
         <span class="authors">Fatma-Zohra Hannou, <b>Maxime Lefrançois</b>, Pierre Jouvelot, Victor Charpenay, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Preprint</span></span>
+        <span class="venue"><span class="tag">Preprint</span><span class="tag pub-y">2023</span></span>
         <span class="acts"><a href="https://hal.science/hal-04159987v1">HAL</a> <a href="https://hal.science/hal-04159987/document">PDF</a></span>
       </li>
     </ol>
@@ -366,52 +362,52 @@
   <div class="pub-group">
     <h3 class="pub-year">2022</h3>
     <ol class="pubs">
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2022">
         <span class="title">Des machines qui surfent sur le web</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Outreach</span></span>
+        <span class="venue"><span class="tag">Outreach</span><span class="tag pub-y">2022</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03561100v1">HAL</a></span>
       </li>
-      <li data-type="conference">
-        <span class="title">Hypermedea: A Framework for Web (of Things) Agents</span>
-        <span class="authors">Victor Charpenay, Antoine Zimmermann, <b>Maxime Lefrançois</b>, Olivier Boissier</span>
-        <span class="venue"><span class="tag">Conference</span>WWW &#x27;22: Companion Proceedings of the Web Conference 2022, pp. 176-179, Lyon (Virtual)</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03609556v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-03609556/document">PDF</a> <a href="https://doi.org/10.1145/3487553.3524243">DOI</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2022">
         <span class="title">Apports des méthodologies et techniques de développement logiciel pour l&#x27;ingénierie des ontologies: Retour d&#x27;expérience des contributions au développement de l&#x27;ontologie ETSI SAREF</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Raúl García-Castro, María Poveda-Villalón, Omar Qawasmeh</span>
-        <span class="venue"><span class="tag">Conference</span>Journées Francophones d’Ingénierie des Connaissances, pp. 72-81, Saint-Etienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>Journées Francophones d’Ingénierie des Connaissances, pp. 72-81, Saint-Etienne</span>
         <span class="acts"><a href="https://hal.science/hal-03819820v1">HAL</a> <a href="https://hal.science/hal-03819820/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2022">
+        <span class="title">Hypermedea: A Framework for Web (of Things) Agents</span>
+        <span class="authors">Victor Charpenay, Antoine Zimmermann, <b>Maxime Lefrançois</b>, Olivier Boissier</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>WWW &#x27;22: Companion Proceedings of the Web Conference 2022, pp. 176-179, Lyon (Virtual)</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03609556v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-03609556/document">PDF</a> <a href="https://doi.org/10.1145/3487553.3524243">DOI</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2022">
         <span class="title">Négociation de contenu sémantique pour l&#x27;échange de connaissances entre systèmes hétérogènes</span>
         <span class="authors">Yousouf Taghzouti, Antoine Zimmermann, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>20èmes Rencontres des Jeunes Chercheurs en Intelligence Artificielle, Saint-Etienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>20èmes Rencontres des Jeunes Chercheurs en Intelligence Artificielle, Saint-Etienne</span>
         <span class="acts"><a href="https://hal.science/hal-03765368v1">HAL</a> <a href="https://hal.science/hal-03765368/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2022">
         <span class="title">A Portal for the State of the Art on Content Negotiation</span>
         <span class="authors">Yousouf Taghzouti, Antoine Zimmermann, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>ISWC’22: international semantic web conference, Hangzhou</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>ISWC’22: international semantic web conference, Hangzhou</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03843924v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2022">
         <span class="title">Projet de Jumeau Numérique du bâtiment Espace Fauriel de Mines Saint-Étienne</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Journée IoT et IA : Internet des Objets et Intelligence Artificielle. Plate-Forme Intelligence Artificielle 2022, Saint-Etienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>Journée IoT et IA : Internet des Objets et Intelligence Artificielle. Plate-Forme Intelligence Artificielle 2022, Saint-Etienne</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03712534v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-03712534/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2022">
         <span class="title">Négociation de contenu sur le Web: un état de l’art</span>
         <span class="authors">Yousouf Taghzouti, Antoine Zimmermann, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>IC Journées francophones d’Ingénierie des Connaissances PFIA 2022, pp. 64-70, Saint-Etienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2022</span>IC Journées francophones d’Ingénierie des Connaissances PFIA 2022, pp. 64-70, Saint-Etienne</span>
         <span class="acts"><a href="https://hal.science/hal-03837655v1">HAL</a> <a href="https://hal.science/hal-03837655/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2022">
         <span class="title">Content negotiation on the Web: State of the art</span>
         <span class="authors">Yousouf Taghzouti, Antoine Zimmermann, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Preprint</span></span>
+        <span class="venue"><span class="tag">Preprint</span><span class="tag pub-y">2022</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03656955v1">HAL</a></span>
       </li>
     </ol>
@@ -419,46 +415,46 @@
   <div class="pub-group">
     <h3 class="pub-year">2021</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2021">
         <span class="title">BOT: the Building Topology Ontology of the W3C Linked Building Data Group</span>
         <span class="authors">Mads Holten Rasmussen, <b>Maxime Lefrançois</b>, Georg Ferdinand Schneider, Pieter Pauwels</span>
-        <span class="venue"><span class="tag">Journal</span>Semantic Web – Interoperability, Usability, Applicability, vol. 12(1), pp. 143-161</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2021</span>Semantic Web – Interoperability, Usability, Applicability, vol. 12(1), pp. 143-161</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02890191v1">HAL</a> <a href="https://doi.org/10.3233/SW-200385">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2021">
         <span class="title">Le framework de développement de l’ontologie ETSI SAREF (Smart Applications REFerence ontology)</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Journée Thématique EGC &amp; IA : Évolution et dynamique des connaissances formelles, Grenoble</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2021</span>Journée Thématique EGC &amp; IA : Évolution et dynamique des connaissances formelles, Grenoble</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03231685v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2021">
         <span class="title">Éditorial : Journées francophones d’Ingénierie des Connaissances</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Plate-Forme Intelligence Artificielle (PFIA&#x27;21), pp. pp 4-6, Bordeaux</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2021</span>Plate-Forme Intelligence Artificielle (PFIA&#x27;21), pp. pp 4-6, Bordeaux</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03259843v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-03259843/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2021">
         <span class="title">Feeding PIDza to VIVO: data ingest with SPARQL-Generate</span>
         <span class="authors">Sandra Mierz, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>12th VIVO Conference (VIVO21), On Line</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2021</span>12th VIVO Conference (VIVO21), On Line</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03270629v1">HAL</a> <a href="https://doi.org/10.5281/zenodo.5027304">DOI</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2021">
         <span class="title">Conférence Nationale d&#x27;Intelligence Artificielle Année 2021</span>
         <span class="authors">Olivier Boissier, Zied Bouraoui, Stephan Brunessaux, Sylvie Doutre, Jean-Paul Jamont, Abir Karami, …, Frédéric Maris</span>
-        <span class="venue"><span class="tag">Book</span></span>
+        <span class="venue"><span class="tag">Book</span><span class="tag pub-y">2021</span></span>
         <span class="acts"><a href="https://hal.science/hal-03353852v1">HAL</a> <a href="https://hal.science/hal-03353852/document">PDF</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="edited" data-group="Edited volumes" data-year="2021">
         <span class="title">Actes des 32es journées francophones d&#x27;Ingénierie des Connaissances</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Proceedings</span>Plate-Forme Intelligence Artificielle</span>
+        <span class="venue"><span class="tag">Proceedings</span><span class="tag pub-y">2021</span>Plate-Forme Intelligence Artificielle</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03261182v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-03261182/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2021">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; Extension to SAREF ; Part 11 : Lift Domain</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Mauro Dragoni, Alba Fernandez Izquierdo, Raúl García Castro</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 31</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2021</span>pp. p 31</span>
         <span class="acts"><a href="https://hal.science/hal-04999552v1">HAL</a></span>
       </li>
     </ol>
@@ -466,64 +462,64 @@
   <div class="pub-group">
     <h3 class="pub-year">2020</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2020">
         <span class="title">Semantics in the Edge: Sensors and actuators in the Web of Linked Data and Things</span>
         <span class="authors">Federica Cena, Armin Haller, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Journal</span>Open Journal Of Semantic Web, vol. 11(4), pp. 571-580</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2020</span>Open Journal Of Semantic Web, vol. 11(4), pp. 571-580</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02912327v1">HAL</a> <a href="https://doi.org/10.3233/SW-200379">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2020">
         <span class="title">Interoperabilité et raisonnement dans le Web Sémantique des objets: le projet CoSWoT</span>
         <span class="authors">Francesco Antoniazzi, Ghislain Auguste Atemezing, Fabien Badeig, Mahdi Bennara, Stéphan Bernard, Pierre-Antoine Champin, …, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>31es Journées francophones d&#x27;Ingénierie des Connaissances, Angers</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2020</span>31es Journées francophones d&#x27;Ingénierie des Connaissances, Angers</span>
         <span class="acts"><a href="https://hal.science/hal-02888216v1">HAL</a> <a href="https://hal.science/hal-02888216/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2020">
         <span class="title">Interoperability of Semantically-Enabled Web Services on theWoT: Challenges and Prospects</span>
         <span class="authors">Mahdi Bennara, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Nurten Messalti</span>
-        <span class="venue"><span class="tag">Conference</span>22nd International Conference on Information Integration and Web-based Applications &amp; Services (iiWAS2020), pp. 5, Chiang Mai</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2020</span>22nd International Conference on Information Integration and Web-based Applications &amp; Services (iiWAS2020), pp. 5, Chiang Mai</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03010270v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2020">
         <span class="title">Smart Applications REFerence ontology</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>SemWeb.Pro 2020 Journée de présentations et de rencontres dédiées au web sémantique dans le monde professionnel, En ligne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2020</span>SemWeb.Pro 2020 Journée de présentations et de rencontres dédiées au web sémantique dans le monde professionnel, En ligne</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-03007142v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2020">
         <span class="title">Increasing interoperability in the Web of Things using Autonomous Agents (Position Paper)</span>
         <span class="authors">Edison Chung, <b>Maxime Lefrançois</b>, Olivier Boissier</span>
-        <span class="venue"><span class="tag">Conference</span>18e Rencontres des Jeunes Chercheurs en Intelligence Artificielle 2020 (RJCIA), Angers</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2020</span>18e Rencontres des Jeunes Chercheurs en Intelligence Artificielle 2020 (RJCIA), Angers</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02890165v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-02890165/document">PDF</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2020">
         <span class="title">Intelligent and decentralized Applications on constrained objects using Semantic Web technologies for Sustainable Agriculture and Smart Buildings</span>
         <span class="authors">Alexandre Bento, Gabriel Martins, Ghislain Atemezing, Fabien Badeig, Mahdi Bennara, Pierre-Antoine Champin, …, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Poster</span>International Forum of Agricultural Robotic (FIRA 2020), Virtuel event</span>
+        <span class="venue"><span class="tag">Poster</span><span class="tag pub-y">2020</span>International Forum of Agricultural Robotic (FIRA 2020), Virtuel event</span>
         <span class="acts"><a href="https://hal.science/hal-03114508v1">HAL</a> <a href="https://hal.science/hal-03114508/document">PDF</a></span>
       </li>
-      <li data-type="report">
-        <span class="title">ETSI TC SmartM2M. SmartM2M ; SAREF Development Framework and Workflow, Streamlining the Development of SAREF and its Extensions</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Raúl García Castro, María Poveda-Villalón</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 39</span>
-        <span class="acts"><a href="https://hal.science/hal-04999570v1">HAL</a></span>
-      </li>
-      <li data-type="report">
-        <span class="title">ETSI TC SmartM2M. SmartM2M ; Smart Applications ; Reference Ontology and oneM2M Mapping</span>
-        <span class="authors">Laura Daniele, Raúl García Castro, <b>Maxime Lefrançois</b>, María Poveda-Villalón</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 25</span>
-        <span class="acts"><a href="https://hal.science/hal-04999581v1">HAL</a></span>
-      </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2020">
         <span class="title">SmartM2M; Extension to SAREF; Part 8: eHealth/Ageing-well Domain</span>
         <span class="authors">Marc Girod-Genet, Lina Nachabe Ismail, <b>Maxime Lefrançois</b>, João Moreira, Mauro Dragoni</span>
-        <span class="venue"><span class="tag">Report</span>pp. 38</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2020</span>pp. 38</span>
         <span class="acts"><a href="https://hal.science/hal-02937318v1">HAL</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="report" data-group="Reports and preprints" data-year="2020">
+        <span class="title">ETSI TC SmartM2M. SmartM2M ; SAREF Development Framework and Workflow, Streamlining the Development of SAREF and its Extensions</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Raúl García Castro, María Poveda-Villalón</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2020</span>pp. p 39</span>
+        <span class="acts"><a href="https://hal.science/hal-04999570v1">HAL</a></span>
+      </li>
+      <li data-type="report" data-group="Reports and preprints" data-year="2020">
+        <span class="title">ETSI TC SmartM2M. SmartM2M ; Smart Applications ; Reference Ontology and oneM2M Mapping</span>
+        <span class="authors">Laura Daniele, Raúl García Castro, <b>Maxime Lefrançois</b>, María Poveda-Villalón</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2020</span>pp. p 25</span>
+        <span class="acts"><a href="https://hal.science/hal-04999581v1">HAL</a></span>
+      </li>
+      <li data-type="other" data-group="Other" data-year="2020">
         <span class="title">SPARQL-Generate implementation over Apache Jena</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Mohammad Noorani Bakerally, El Mehdi Khalfi, Omar Qawasmeh</span>
-        <span class="venue"><span class="tag">Software</span></span>
+        <span class="venue"><span class="tag">Software</span><span class="tag pub-y">2020</span></span>
         <span class="acts"><a href="https://hal.science/hal-04999601v1">HAL</a> <a href="https://doi.org/10.5281/zenodo.3965916">DOI</a></span>
       </li>
     </ol>
@@ -531,136 +527,136 @@
   <div class="pub-group">
     <h3 class="pub-year">2019</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2019">
         <span class="title">Dynamic Reconfiguration of Smart Sensors: * A Semantic Web based Approach</span>
         <span class="authors">Samya Sagar, Maha Khemaja, <b>Maxime Lefrançois</b>, Issam Rebaï</span>
-        <span class="venue"><span class="tag">Journal</span>IEEE Sensors Journal, pp. 1-1</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2019</span>IEEE Sensors Journal, pp. 1-1</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02350486v1">HAL</a> <a href="https://doi.org/10.1109/JSEN.2019.2947236">DOI</a></span>
       </li>
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2019">
         <span class="title">Managing interrelated project information in AEC Knowledge Graphs</span>
         <span class="authors">Mads Holten Rasmussen, <b>Maxime Lefrançois</b>, Pieter Pauwels, Christian Anker Hviid, Jan Karlshøj</span>
-        <span class="venue"><span class="tag">Journal</span>Automation in Construction, vol. 108, pp. 102956</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2019</span>Automation in Construction, vol. 108, pp. 102956</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02337535v1">HAL</a> <a href="https://doi.org/10.1016/j.autcon.2019.102956">DOI</a></span>
       </li>
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2019">
         <span class="title">SOSA: A lightweight ontology for sensors, observations, samples, and actuators</span>
         <span class="authors">Krzysztof Janowicz, Armin Haller, Simon J.D. Cox, Danh Le Phuoc, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Journal</span>Journal of Web Semantics, vol. 56, pp. 1-10</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2019</span>Journal of Web Semantics, vol. 56, pp. 1-10</span>
         <span class="acts"><a href="https://hal.science/hal-01885202v1">HAL</a> <a href="https://doi.org/10.1016/j.websem.2018.06.003">DOI</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2019">
         <span class="title">L’IA pour des systèmes industriels interopérables et autonomes</span>
         <span class="authors">Anais Culot, Olivier Boissier, <b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Outreach</span></span>
+        <span class="venue"><span class="tag">Outreach</span><span class="tag pub-y">2019</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02964645v1">HAL</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2019">
         <span class="title">Le « Petit Larousse » des objets connectés</span>
         <span class="authors">Tiphaine Claveau, <b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Outreach</span></span>
+        <span class="venue"><span class="tag">Outreach</span><span class="tag pub-y">2019</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02406702v1">HAL</a></span>
       </li>
-      <li data-type="conference">
-        <span class="title">SPARQL-Generate: Génération de RDF et de texte à partir de RDF et flux de documents dans des formats hétérogènes</span>
-        <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Journée de présentations et de rencontres dédiées au web sémantique dans le monde professionnel (SemWeb.Pro), Paris</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02382181v1">HAL</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Pitfalls in Networked and Versioned Ontologies</span>
         <span class="authors">Omar Qawasmeh, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Pierre Maret</span>
-        <span class="venue"><span class="tag">Conference</span>International Joint Conference on Knowledge Discovery, Knowledge Engineering, and Knowledge Management, pp. 185-212, Vienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>International Joint Conference on Knowledge Discovery, Knowledge Engineering, and Knowledge Management, pp. 185-212, Vienne</span>
         <span class="acts"><a href="https://hal.science/hal-03205325v1">HAL</a> <a href="https://doi.org/10.1007/978-3-030-66196-0_9">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Positionnement sur le Web Sémantique des Objets</span>
         <span class="authors">Nicolas Seydoux, <b>Maxime Lefrançois</b>, Lionel Médini</span>
-        <span class="venue"><span class="tag">Conference</span>Journées francophones d’Ingénierie des Connaissances, Plate-Forme Intelligence Artificielle (PFIA 2019), pp. 8-25, Toulouse</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Journées francophones d’Ingénierie des Connaissances, Plate-Forme Intelligence Artificielle (PFIA 2019), pp. 8-25, Toulouse</span>
         <span class="acts"><a href="https://hal.science/hal-02174451v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
+        <span class="title">SPARQL-Generate: Génération de RDF et de texte à partir de RDF et flux de documents dans des formats hétérogènes</span>
+        <span class="authors"><b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Journée de présentations et de rencontres dédiées au web sémantique dans le monde professionnel (SemWeb.Pro), Paris</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02382181v1">HAL</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Observing the Impact and Adaptation to the Evolution of an Imported Ontology</span>
         <span class="authors">Omar Qawasmeh, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Pierre Maret</span>
-        <span class="venue"><span class="tag">Conference</span>IC3K 2019 - 11ht International Joint Conference on Knowledge Discovery, Knowledge Enginnering and Knowledge Management, vol. 0IC3K, pp. 76-86, Vienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>IC3K 2019 - 11ht International Joint Conference on Knowledge Discovery, Knowledge Enginnering and Knowledge Management, vol. 0IC3K, pp. 76-86, Vienne</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02319731v1">HAL</a> <a href="https://doi.org/10.5220/0008064700760086">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Web Intelligence Summer School 2019</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Web Intelligence Summer School 2019, Saint Etienne</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Web Intelligence Summer School 2019, Saint Etienne</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02167681v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Interopérabilité sémantique et coordination décentralisée pour l’Industrie du futur</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Un état des lieux sur les activités de recherche sur l‘intelligence artificielle dans les écoles de l’IMT, Paris</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Un état des lieux sur les activités de recherche sur l‘intelligence artificielle dans les écoles de l’IMT, Paris</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02096208v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Reference Knowledge Models for Smart Applications</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Digital transformation in France and Germany: Consequences for industry, society &amp; higher education, Paris</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Digital transformation in France and Germany: Consequences for industry, society &amp; higher education, Paris</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02355844v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">The Semantic Sensor Network Ontology, Revamped</span>
         <span class="authors">Kerry Taylor, Armin Haller, <b>Maxime Lefrançois</b>, Simon D. Cox, Krzysztof Janowicz, Raúl García-Castro, …, Claus Stadler</span>
-        <span class="venue"><span class="tag">Conference</span>18th International Semantic Web Conference, Auckland</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>18th International Semantic Web Conference, Auckland</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02430047v1">HAL</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2019">
         <span class="title">Éditorial</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Rencontres des Jeunes Chercheurs en Intelligence Artificielle 2019, pp. 6p, Toulouse</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2019</span>Rencontres des Jeunes Chercheurs en Intelligence Artificielle 2019, pp. 6p, Toulouse</span>
         <span class="acts"><a href="https://hal.science/hal-02161209v1">HAL</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="edited" data-group="Edited volumes" data-year="2019">
         <span class="title">The Semantic Web – ISWC 2019 : part II</span>
         <span class="authors">Chiara Ghidini, Olaf Hartig, Maria Maleshkova, Vojtech Svatek, Isabel Cruz, Hogan Aidan, …, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Special issue</span>Lecture Notes in Computer Science, vol. 11779, pp. 550</span>
+        <span class="venue"><span class="tag">Special issue</span><span class="tag pub-y">2019</span>Lecture Notes in Computer Science, vol. 11779, pp. 550</span>
         <span class="acts"><a href="https://hal.science/hal-02329358v1">HAL</a> <a href="https://doi.org/10.1007/978-3-030-30796-7">DOI</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="edited" data-group="Edited volumes" data-year="2019">
         <span class="title">The Semantic Web – ISWC 2019 : part I</span>
         <span class="authors">Chiara Ghidini, Olaf Hartig, Maria Maleshkova, Vojtech Svatek, Isabel Cruz, Hogan Aidan, …, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Special issue</span>Lecture Notes in Computer Science, vol. 11778, pp. 754</span>
+        <span class="venue"><span class="tag">Special issue</span><span class="tag pub-y">2019</span>Lecture Notes in Computer Science, vol. 11778, pp. 754</span>
         <span class="acts"><a href="https://hal.science/hal-02328688v1">HAL</a> <a href="https://doi.org/10.1007/978-3-030-30793-6">DOI</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2019">
         <span class="title">Conférence Nationale d&#x27;Intelligence Artificielle Année 2019</span>
         <span class="authors">Caroline Chanel, Tiago de Lima, Sylvie Doutre, Amal Elfallah-Seghrouchni, Frederick Garcia, Nathalie Jane Hernandez, …, Dominique Longin</span>
-        <span class="venue"><span class="tag">Book</span></span>
+        <span class="venue"><span class="tag">Book</span><span class="tag pub-y">2019</span></span>
         <span class="acts"><a href="https://hal.science/hal-02458049v1">HAL</a> <a href="https://hal.science/hal-02458049/document">PDF</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2019">
         <span class="title">Semantic IoT Solutions -A Developer Perspective</span>
         <span class="authors">Hamza Baqa, Martin Bauer, Sonia Bilbao, Aitor Corchero, Laura Daniele, Iker Esnaola, …, Michelle Wetterwald</span>
-        <span class="venue"><span class="tag">Book</span>pp. 51p</span>
+        <span class="venue"><span class="tag">Book</span><span class="tag pub-y">2019</span>pp. 51p</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02345694v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-02345694/document">PDF</a> <a href="https://doi.org/10.13140/RG.2.2.16339.53286">DOI</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="chapter" data-group="Books and chapters" data-year="2019">
         <span class="title">Towards semantic interoperability standards based on ontologies</span>
         <span class="authors">Hamza Baqa, Martin Bauer, Sonia Bilbao, Aitor Corchero, Laura Daniele, Iker Esnaola, …, Michelle Wetterwald</span>
-        <span class="venue"><span class="tag">Book</span>pp. 26 p.</span>
+        <span class="venue"><span class="tag">Book</span><span class="tag pub-y">2019</span>pp. 26 p.</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-02352822v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-02352822/document">PDF</a> <a href="https://doi.org/10.13140/RG.2.2.26825.29282">DOI</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="edited" data-group="Edited volumes" data-year="2019">
         <span class="title">Actes des 17es Rencontres des Jeunes Chercheurs en Intelligence Artificielle</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Proceedings</span>Plate-Forme Intelligence Artificielle, Toulouse</span>
+        <span class="venue"><span class="tag">Proceedings</span><span class="tag pub-y">2019</span>Plate-Forme Intelligence Artificielle, Toulouse</span>
         <span class="acts"><a href="https://hal.science/hal-02167252v1">HAL</a> <a href="https://hal.science/hal-02167252/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2019">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; Guidelines for consolidating SAREF with new reference ontology patterns, based on the experience from the ITEA SEAS project</span>
         <span class="authors"><b>Maxime Lefrançois</b>, María Poveda-Villalón, Raúl García Castro</span>
-        <span class="venue"><span class="tag">Report</span>pp. p 35</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2019</span>pp. p 35</span>
         <span class="acts"><a href="https://hal.science/hal-04999587v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2019">
         <span class="title">ETSI TC SmartM2M. SmartM2M ; SAREF consolidation with new reference ontology patterns, based on the experience from the SEAS project</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Report</span>pp. p 21</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2019</span>pp. p 21</span>
         <span class="acts"><a href="https://hal.science/hal-04999590v1">HAL</a></span>
       </li>
     </ol>
@@ -668,64 +664,64 @@
   <div class="pub-group">
     <h3 class="pub-year">2018</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2018">
         <span class="title">The Modular SSN Ontology: A Joint W3C and OGC Standard Specifying the Semantics of Sensors, Observations, Sampling, and Actuation</span>
         <span class="authors">Armin Haller, Krzysztof Janowicz, Simon J.D. Cox, <b>Maxime Lefrançois</b>, Kerry Taylor, Danh Le Phuoc, …, Claus Stadler</span>
-        <span class="venue"><span class="tag">Journal</span>Semantic Web – Interoperability, Usability, Applicability, vol. 10(1), pp. 9-32</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2018</span>Semantic Web – Interoperability, Usability, Applicability, vol. 10(1), pp. 9-32</span>
         <span class="acts"><a href="https://hal.science/hal-01885335v1">HAL</a> <a href="https://hal.science/hal-01885335/document">PDF</a> <a href="https://doi.org/10.3233/SW-180320">DOI</a></span>
       </li>
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2018">
         <span class="title">Best Practices for Publishing, Retrieving, and Using Spatial Data on the Web</span>
         <span class="authors">Linda van den Brink, Payam Barnaghi, Jeremy Tandy, Ghislain Atemezing, Rob Atkinson, Byron Cochrane, …, Raphäel Troncy</span>
-        <span class="venue"><span class="tag">Journal</span>Semantic Web – Interoperability, Usability, Applicability, vol. 10(1), pp. 95-114</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2018</span>Semantic Web – Interoperability, Usability, Applicability, vol. 10(1), pp. 95-114</span>
         <span class="acts"><a href="https://hal.science/hal-01885342v1">HAL</a> <a href="https://hal.science/hal-01885342/document">PDF</a> <a href="https://doi.org/10.3233/SW-180305">DOI</a></span>
       </li>
-      <li data-type="conference">
-        <span class="title">Modeling Smart Sensors on top of SOSA/SSN and WoT TD with the Semantic Smart Sensor Network (S3N) modular Ontology</span>
-        <span class="authors">Samya Sagar, <b>Maxime Lefrançois</b>, Issam Rebaï, Maha Khemaja, Serge Garlatti, Jamel Feki, Lionel Médini</span>
-        <span class="venue"><span class="tag">Conference</span>ISWC 2018 : 17th Internal Semantic Web Conference, pp. 163 - 177, Monterey</span>
-        <span class="acts"><a href="https://hal.science/hal-01885330v1">HAL</a> <a href="https://hal.science/hal-01885330/document">PDF</a> <a href="https://doi.org/10.3233/978-1-61499-894-5-163">DOI</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Computer-assisted Ontology Construction System: Focus on Bootstrapping Capabilities</span>
-        <span class="authors">Omar Qawasmeh, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Pierre Maret</span>
-        <span class="venue"><span class="tag">Conference</span>The Semantic Web: ESWC 2018 Satellite Events. ESWC 2018, vol. 11155, pp. 60-65, Heraklion</span>
-        <span class="acts"><a href="https://hal.science/hal-01885340v1">HAL</a> <a href="https://hal.science/hal-01885340/document">PDF</a> <a href="https://doi.org/10.1007/978-3-319-98192-5_12">DOI</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2018">
         <span class="title">RDF Presentation and Correct Content Conveyance for Legacy Services and the Web of Things</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>8th International Conference on the Internet of Things (IOT’18), Santa-Barbara</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>8th International Conference on the Internet of Things (IOT’18), Santa-Barbara</span>
         <span class="acts"><a href="https://hal.science/hal-01885328v1">HAL</a> <a href="https://doi.org/10.1145/3277593.3277618">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2018">
         <span class="title">Choosing Your Ontologies for Sensor Data Applications</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Intelligent Environments 2018, Rome</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>Intelligent Environments 2018, Rome</span>
         <span class="acts"><a href="https://hal.science/hal-02016358v1">HAL</a> <a href="https://hal.science/hal-02016358/document">PDF</a> <a href="https://doi.org/10.3233/978-1-61499-874-7-8">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2018">
+        <span class="title">Modeling Smart Sensors on top of SOSA/SSN and WoT TD with the Semantic Smart Sensor Network (S3N) modular Ontology</span>
+        <span class="authors">Samya Sagar, <b>Maxime Lefrançois</b>, Issam Rebaï, Maha Khemaja, Serge Garlatti, Jamel Feki, Lionel Médini</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>ISWC 2018 : 17th Internal Semantic Web Conference, pp. 163 - 177, Monterey</span>
+        <span class="acts"><a href="https://hal.science/hal-01885330v1">HAL</a> <a href="https://hal.science/hal-01885330/document">PDF</a> <a href="https://doi.org/10.3233/978-1-61499-894-5-163">DOI</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2018">
+        <span class="title">Computer-assisted Ontology Construction System: Focus on Bootstrapping Capabilities</span>
+        <span class="authors">Omar Qawasmeh, <b>Maxime Lefrançois</b>, Antoine Zimmermann, Pierre Maret</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>The Semantic Web: ESWC 2018 Satellite Events. ESWC 2018, vol. 11155, pp. 60-65, Heraklion</span>
+        <span class="acts"><a href="https://hal.science/hal-01885340v1">HAL</a> <a href="https://hal.science/hal-01885340/document">PDF</a> <a href="https://doi.org/10.1007/978-3-319-98192-5_12">DOI</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2018">
         <span class="title">OPM: An ontology for describing properties that evolve over time</span>
         <span class="authors">Mads Holten Rasmussen, <b>Maxime Lefrançois</b>, Mathias Bonduel, Christian Anker Hviid, Jan Karlshøj</span>
-        <span class="venue"><span class="tag">Conference</span>6th Linked Data in Architecture and Construction Workshop, London</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>6th Linked Data in Architecture and Construction Workshop, London</span>
         <span class="acts"><a href="https://hal.science/hal-01885248v1">HAL</a> <a href="https://hal.science/hal-01885248/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2018">
         <span class="title">The Unified Code for Units of Measure in RDF: cdt:ucum and other UCUM Datatypes</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>The Semantic Web: ESWC 2018 Satellite Events. ESWC 2018, vol. 11155, pp. 196-201, Heraklion</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2018</span>The Semantic Web: ESWC 2018 Satellite Events. ESWC 2018, vol. 11155, pp. 196-201, Heraklion</span>
         <span class="acts"><a href="https://hal.science/hal-01885337v1">HAL</a> <a href="https://hal.science/hal-01885337/document">PDF</a> <a href="https://doi.org/10.1007/978-3-319-98192-5_37">DOI</a></span>
       </li>
-      <li data-type="edited">
+      <li data-type="edited" data-group="Edited volumes" data-year="2018">
         <span class="title">Proceedings of the 9th International Semantic Sensor Networks Workshop, co-located with 17th International Semantic Web Conference (ISWC 2018)</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Raúl García Castro, Amelie Gyrard, Kerry Taylor</span>
-        <span class="venue"><span class="tag">Proceedings</span></span>
+        <span class="venue"><span class="tag">Proceedings</span><span class="tag pub-y">2018</span></span>
         <span class="acts"><a href="https://hal.science/hal-01885348v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2018">
         <span class="title">How my actuator can understand what your sensor says: Revisiting the Web&#x27;s Architectural and Linked Data Principles for Legacy Services and the Web of Things</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Preprint</span></span>
+        <span class="venue"><span class="tag">Preprint</span><span class="tag pub-y">2018</span></span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01725203v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01725203/document">PDF</a></span>
       </li>
     </ol>
@@ -733,64 +729,64 @@
   <div class="pub-group">
     <h3 class="pub-year">2017</h3>
     <ol class="pubs">
-      <li data-type="journal">
+      <li data-type="journal" data-group="Journals" data-year="2017">
         <span class="title">Monitoring Traffic Optimization in Smart Grid</span>
         <span class="authors">Guillaume Habault, <b>Maxime Lefrançois</b>, François Lemercier, Nicolas Montavont, Periklis Chatzimisios, Georgios Papadopoulos</span>
-        <span class="venue"><span class="tag">Journal</span>IEEE Transactions on Industrial Informatics, vol. 13(6), pp. 3246-3255</span>
+        <span class="venue"><span class="tag">Journal</span><span class="tag pub-y">2017</span>IEEE Transactions on Industrial Informatics, vol. 13(6), pp. 3246-3255</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638261v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638261/document">PDF</a> <a href="https://doi.org/10.1109/TII.2017.2742584">DOI</a></span>
       </li>
-      <li data-type="conference">
-        <span class="title">A SPARQL extension for generating RDF from heterogeneous formats</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
-        <span class="venue"><span class="tag">Conference</span>14th ESWC 2017, vol. Volume 10249, pp. Pages 35-50, Portoroz</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01504637v1">HAL</a> <a href="https://doi.org/10.1007/978-3-319-58068-5_3">DOI</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Towards Federated Queries for Web of Things Devices</span>
-        <span class="authors">Sejal Jaiswal, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Workshop on Semantic Interoperability and Standardization in the IoT, SIS-IoT, pp. 4p., Amsterdam</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638285v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638285/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Recent changes in the Building Topology Ontology</span>
-        <span class="authors">Mads Holten Rasmussen, Pieter Pauwels, <b>Maxime Lefrançois</b>, Georg Ferdinand Schneider, Christian Anker Hviid, Jan Karlshøj</span>
-        <span class="venue"><span class="tag">Conference</span>LDAC2017 - 5th Linked Data in Architecture and Construction Workshop, Dijon</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638305v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638305/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Interopérabilité sémantique libérale pour les services et les objets</span>
-        <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>17ème conférence Extraction et Gestion des Connaissances, EGC, Grenoble</span>
-        <span class="acts"><a href="https://hal.science/hal-02016103v1">HAL</a> <a href="https://hal.science/hal-02016103/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Planned ETSI SAREF Extensions based on the W3C&amp;OGC SOSA/SSN-compatible SEAS Ontology Patterns</span>
-        <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>Workshop on Semantic Interoperability and Standardization in the IoT, SIS-IoT, pp. 11p., Amsterdam</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638275v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638275/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Génération de RDF à partir de sources de données aux formats hétérogènes</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
-        <span class="venue"><span class="tag">Conference</span>EGC 2017, vol. RNTI-E-33, pp. pp.93-104, Grenoble</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01491561v1">HAL</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2017">
         <span class="title">Support uniforme de types de données personnalisés dans RDF et SPARQL</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>EGC 2017, vol. RNTI-E-33, pp. pp.321-326, Grenoble</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>EGC 2017, vol. RNTI-E-33, pp. pp.321-326, Grenoble</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01491558v1">HAL</a></span>
       </li>
-      <li data-type="chapter">
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">Towards Federated Queries for Web of Things Devices</span>
+        <span class="authors">Sejal Jaiswal, <b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>Workshop on Semantic Interoperability and Standardization in the IoT, SIS-IoT, pp. 4p., Amsterdam</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638285v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638285/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">Recent changes in the Building Topology Ontology</span>
+        <span class="authors">Mads Holten Rasmussen, Pieter Pauwels, <b>Maxime Lefrançois</b>, Georg Ferdinand Schneider, Christian Anker Hviid, Jan Karlshøj</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>LDAC2017 - 5th Linked Data in Architecture and Construction Workshop, Dijon</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638305v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638305/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">Interopérabilité sémantique libérale pour les services et les objets</span>
+        <span class="authors"><b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>17ème conférence Extraction et Gestion des Connaissances, EGC, Grenoble</span>
+        <span class="acts"><a href="https://hal.science/hal-02016103v1">HAL</a> <a href="https://hal.science/hal-02016103/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">Planned ETSI SAREF Extensions based on the W3C&amp;OGC SOSA/SSN-compatible SEAS Ontology Patterns</span>
+        <span class="authors"><b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>Workshop on Semantic Interoperability and Standardization in the IoT, SIS-IoT, pp. 11p., Amsterdam</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01638275v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01638275/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">Génération de RDF à partir de sources de données aux formats hétérogènes</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>EGC 2017, vol. RNTI-E-33, pp. pp.93-104, Grenoble</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01491561v1">HAL</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2017">
+        <span class="title">A SPARQL extension for generating RDF from heterogeneous formats</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2017</span>14th ESWC 2017, vol. Volume 10249, pp. Pages 35-50, Portoroz</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01504637v1">HAL</a> <a href="https://doi.org/10.1007/978-3-319-58068-5_3">DOI</a></span>
+      </li>
+      <li data-type="chapter" data-group="Books and chapters" data-year="2017">
         <span class="title">Semantic Sensor Network Ontology</span>
         <span class="authors">Armin Haller, Krzysztof Janowicz, Simon D. Cox, Danh Le Phuoc, Kerry Taylor, <b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Book</span></span>
+        <span class="venue"><span class="tag">Book</span><span class="tag pub-y">2017</span></span>
         <span class="acts"><a href="https://hal.science/hal-02016313v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2017">
         <span class="title">The SEAS Knowledge Model</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Jarmo Kalaoja, Takoua Ghariani, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Report</span></span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2017</span></span>
         <span class="acts"><a href="https://hal.science/hal-01885354v1">HAL</a> <a href="https://hal.science/hal-01885354/document">PDF</a></span>
       </li>
     </ol>
@@ -798,40 +794,40 @@
   <div class="pub-group">
     <h3 class="pub-year">2016</h3>
     <ol class="pubs">
-      <li data-type="conference">
-        <span class="title">Flexible RDF generation from RDF and heterogeneous data sources with SPARQL-Generate</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
-        <span class="venue"><span class="tag">Conference</span>20th International Conference on Knowledge Engineering and Knowledge Management, vol. 10180, pp. Pages 131-135, Bologne</span>
-        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01417238v1">HAL</a> <a href="https://doi.org/10.1007/978-3-319-58694-6_16">DOI</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2016">
         <span class="title">Publishing real-time microgrid consumption data on the web of Linked Data</span>
         <span class="authors">Luis Gomes, <b>Maxime Lefrançois</b>, Pedro Faria, Zita Vale</span>
-        <span class="venue"><span class="tag">Conference</span>2016 Clemson University Power Systems Conference (PSC), pp. 1-8, Clemson</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2016</span>2016 Clemson University Power Systems Conference (PSC), pp. 1-8, Clemson</span>
         <span class="acts"><a href="https://hal.science/hal-02016083v1">HAL</a> <a href="https://hal.science/hal-02016083/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2016">
+        <span class="title">Flexible RDF generation from RDF and heterogeneous data sources with SPARQL-Generate</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann, Noorani Bakerally</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2016</span>20th International Conference on Knowledge Engineering and Knowledge Management, vol. 10180, pp. Pages 131-135, Bologne</span>
+        <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01417238v1">HAL</a> <a href="https://doi.org/10.1007/978-3-319-58694-6_16">DOI</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2016">
         <span class="title">Supporting Arbitrary Custom Datatypes in RDF and SPARQL</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>13th International Conference, ESWC 2016, pp. pp 371-386, Anissaras</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2016</span>13th International Conference, ESWC 2016, pp. pp 371-386, Anissaras</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01310428v1">HAL</a> <a href="https://doi.org/10.1007/978-3-319-34129-3_23">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2016">
         <span class="title">SCORVoc: Vocabulary-Based Information Integration and Exchange in Supply Networks</span>
         <span class="authors">Niklas Petersen, Irlán Grangel-González, Gökhan Coskun, Sören Auer, Marvin Frommhold, Sebastian Tramp, <b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Conference</span>10th IEEE International Conference on Semantic Computing, ICSC 2016, pp. pp 132-139, Laguna Hills</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2016</span>10th IEEE International Conference on Semantic Computing, ICSC 2016, pp. pp 132-139, Laguna Hills</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01438831v1">HAL</a> <a href="https://doi.org/10.1109/ICSC.2016.25">DOI</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2016">
         <span class="title">Outsourcing Electric Vehicle Smart Charging on the Web of Data</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Guillaume Habault, Caroline Ramondou, Eric Françon</span>
-        <span class="venue"><span class="tag">Conference</span>GREEN 2016 : 1st International Conference on Green Communications, Computing and Technologies, Nice</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2016</span>GREEN 2016 : 1st International Conference on Green Communications, Computing and Technologies, Nice</span>
         <span class="acts"><a href="https://hal.science/hal-01810209v1">HAL</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2016">
         <span class="title">D2.2 SEAS Knowledge Model</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Jarmo Kalaoja, Takoua Ghariani, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Report</span></span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2016</span></span>
         <span class="acts"><a href="https://hal.science/hal-02016334v1">HAL</a> <a href="https://hal.science/hal-02016334/document">PDF</a></span>
       </li>
     </ol>
@@ -839,10 +835,10 @@
   <div class="pub-group">
     <h3 class="pub-year">2015</h3>
     <ol class="pubs">
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2015">
         <span class="title">LinkedVocabularyEditor: une extension MediaWiki pour l’édition collaborative et la publication de vocabulaires liés</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Antoine Zimmermann</span>
-        <span class="venue"><span class="tag">Poster</span>26e Journées Francophones d&#x27;Ingénierie des Connaissances, IC, Rennes</span>
+        <span class="venue"><span class="tag">Poster</span><span class="tag pub-y">2015</span>26e Journées Francophones d&#x27;Ingénierie des Connaissances, IC, Rennes</span>
         <span class="acts"><a href="https://hal-emse.ccsd.cnrs.fr/emse-01158410v1">HAL</a> <a href="https://hal-emse.ccsd.cnrs.fr/emse-01158410/document">PDF</a></span>
       </li>
     </ol>
@@ -850,22 +846,22 @@
   <div class="pub-group">
     <h3 class="pub-year">2014</h3>
     <ol class="pubs">
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2014">
         <span class="title">Un éditeur de définitions formelles pour les connaissances lexicales de la théorie Sens-Texte</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon, Alain Giboin, Romain Gugert</span>
-        <span class="venue"><span class="tag">Conference</span>IC - 25èmes Journées francophones d&#x27;Ingénierie des Connaissances, pp. 279-281, Clermont-Ferrand</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2014</span>IC - 25èmes Journées francophones d&#x27;Ingénierie des Connaissances, pp. 279-281, Clermont-Ferrand</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00967537v1">HAL</a> <a href="https://inria.hal.science/hal-00967537/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2014">
         <span class="title">Méthodologie d&#x27;ingénierie des connaissances pour la représentation des définitions lexicographiques dans le cadre de la théorie Sens-Texte</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon, Alain Giboin</span>
-        <span class="venue"><span class="tag">Conference</span>TOTh - 8th International Conference on Terminology &amp; Ontology : Theories and applications, Chambery</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2014</span>TOTh - 8th International Conference on Terminology &amp; Ontology : Theories and applications, Chambery</span>
         <span class="acts"><a href="https://inria.hal.science/hal-01061399v1">HAL</a> <a href="https://inria.hal.science/hal-01061399/document">PDF</a></span>
       </li>
-      <li data-type="other">
+      <li data-type="other" data-group="Other" data-year="2014">
         <span class="title">Représentation des connaissances sémantiques lexicales de la Théorie Sens-Texte : conceptualisation, représentation, et opérationnalisation des définitions lexicographiques</span>
         <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">PhD thesis</span></span>
+        <span class="venue"><span class="tag">PhD thesis</span><span class="tag pub-y">2014</span></span>
         <span class="acts"><a href="https://theses.hal.science/tel-01071945v2">HAL</a> <a href="https://theses.hal.science/tel-01071945/document">PDF</a> <a href="https://doi.org/10.70675/f0292d85z84f2z4268zb468zbb36feb89615">DOI</a></span>
       </li>
     </ol>
@@ -873,46 +869,46 @@
   <div class="pub-group">
     <h3 class="pub-year">2013</h3>
     <ol class="pubs">
-      <li data-type="conference">
-        <span class="title">Reasoning with Dependency Structures and Lexicographic Definitions using Unit Graphs</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>Depling - 2nd International Conference on Dependency Linguistics, pp. 167-176, Prague</span>
-        <span class="acts"><a href="https://inria.hal.science/hal-00857634v1">HAL</a> <a href="https://inria.hal.science/hal-00857634/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Application of the Unit Graphs Framework to Lexicographic Definitions in the RELIEF project</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Romain Gugert, Fabien Gandon, Alain Giboin</span>
-        <span class="venue"><span class="tag">Conference</span>MTT - 6th International Conference on Meaning-Text Theory, pp. 91-102, Prague</span>
-        <span class="acts"><a href="https://inria.hal.science/hal-00857648v1">HAL</a> <a href="https://inria.hal.science/hal-00857648/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
-        <span class="title">Représentation des connaissances du DEC: Concepts fondamentaux du formalisme des Graphes d&#x27;Unités</span>
-        <span class="authors"><b>Maxime Lefrançois</b></span>
-        <span class="venue"><span class="tag">Conference</span>TALN-RECITAL - 15ème Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues, pp. 164-177, Les Sables d&#x27;Olonne</span>
-        <span class="acts"><a href="https://inria.hal.science/hal-00841257v1">HAL</a> <a href="https://inria.hal.science/hal-00841257/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2013">
         <span class="title">Rationale, Concepts, and Current Outcome of the Unit Graphs Framework</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>RANLP - 9th International Conference Recent Advances in Natural Language Processing, pp. 382-388, Hissar</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>RANLP - 9th International Conference Recent Advances in Natural Language Processing, pp. 382-388, Hissar</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00857652v1">HAL</a> <a href="https://inria.hal.science/hal-00857652/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2013">
+        <span class="title">Reasoning with Dependency Structures and Lexicographic Definitions using Unit Graphs</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>Depling - 2nd International Conference on Dependency Linguistics, pp. 167-176, Prague</span>
+        <span class="acts"><a href="https://inria.hal.science/hal-00857634v1">HAL</a> <a href="https://inria.hal.science/hal-00857634/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2013">
+        <span class="title">Application of the Unit Graphs Framework to Lexicographic Definitions in the RELIEF project</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Romain Gugert, Fabien Gandon, Alain Giboin</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>MTT - 6th International Conference on Meaning-Text Theory, pp. 91-102, Prague</span>
+        <span class="acts"><a href="https://inria.hal.science/hal-00857648v1">HAL</a> <a href="https://inria.hal.science/hal-00857648/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2013">
+        <span class="title">Représentation des connaissances du DEC: Concepts fondamentaux du formalisme des Graphes d&#x27;Unités</span>
+        <span class="authors"><b>Maxime Lefrançois</b></span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>TALN-RECITAL - 15ème Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues, pp. 164-177, Les Sables d&#x27;Olonne</span>
+        <span class="acts"><a href="https://inria.hal.science/hal-00841257v1">HAL</a> <a href="https://inria.hal.science/hal-00841257/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2013">
         <span class="title">The Unit Graphs Framework: A new graph-based Knowledge Representation Formalism for ECD Knowledge Representation</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>MTT - 6th International Conference on Meaning-Text Theory, pp. 80-90, Prague</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>MTT - 6th International Conference on Meaning-Text Theory, pp. 80-90, Prague</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00857650v1">HAL</a> <a href="https://inria.hal.science/hal-00857650/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2013">
         <span class="title">The Unit Graphs Framework: Foundational Concepts and Semantic Consequence</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>RANLP - 9th International Conference Recent Advances in Natural Language Processing, pp. 389-395, Hissar</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2013</span>RANLP - 9th International Conference Recent Advances in Natural Language Processing, pp. 389-395, Hissar</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00857653v1">HAL</a> <a href="https://inria.hal.science/hal-00857653/document">PDF</a></span>
       </li>
-      <li data-type="report">
+      <li data-type="report" data-group="Reports and preprints" data-year="2013">
         <span class="title">The Unit Graphs Mathematical Framework</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Report</span>pp. 65</span>
+        <span class="venue"><span class="tag">Report</span><span class="tag pub-y">2013</span>pp. 65</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00780805v3">HAL</a> <a href="https://inria.hal.science/hal-00780805/document">PDF</a></span>
       </li>
     </ol>
@@ -920,26 +916,27 @@
   <div class="pub-group">
     <h3 class="pub-year">2011</h3>
     <ol class="pubs">
-      <li data-type="conference">
-        <span class="title">ULiS: An Expert System on Linguistics to Support Multilingual Management of Interlingual Knowledge bases</span>
-        <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>TIA - 9th International Conference on Terminology and Artificial Intelligence, pp. 108-114, Paris</span>
-        <span class="acts"><a href="https://inria.hal.science/hal-00801146v1">HAL</a> <a href="https://inria.hal.science/hal-00801146/document">PDF</a></span>
-      </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2011">
         <span class="title">ULiS: An Expert System on Linguistics to Support Multilingual Management of Interlingual Semantic Web Knowledge bases</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>MSW - Proc. 2nd Workshop on the Multilingual Semantic Web, collocated with ISWC - 2011, vol. 775, pp. 50-61, Bonn</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2011</span>MSW - Proc. 2nd Workshop on the Multilingual Semantic Web, collocated with ISWC - 2011, vol. 775, pp. 50-61, Bonn</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00724566v1">HAL</a> <a href="https://inria.hal.science/hal-00724566/document">PDF</a></span>
       </li>
-      <li data-type="conference">
+      <li data-type="conference" data-group="Conferences" data-year="2011">
+        <span class="title">ULiS: An Expert System on Linguistics to Support Multilingual Management of Interlingual Knowledge bases</span>
+        <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2011</span>TIA - 9th International Conference on Terminology and Artificial Intelligence, pp. 108-114, Paris</span>
+        <span class="acts"><a href="https://inria.hal.science/hal-00801146v1">HAL</a> <a href="https://inria.hal.science/hal-00801146/document">PDF</a></span>
+      </li>
+      <li data-type="conference" data-group="Conferences" data-year="2011">
         <span class="title">ILexicOn: toward an ECD-compliant interlingual lexical ontology described with semantic web formalisms</span>
         <span class="authors"><b>Maxime Lefrançois</b>, Fabien Gandon</span>
-        <span class="venue"><span class="tag">Conference</span>MTT - 5th International Conference on Meaning-Text Theory - 2011, pp. 155-164, Barcelona</span>
+        <span class="venue"><span class="tag">Conference</span><span class="tag pub-y">2011</span>MTT - 5th International Conference on Meaning-Text Theory - 2011, pp. 155-164, Barcelona</span>
         <span class="acts"><a href="https://inria.hal.science/hal-00690679v1">HAL</a> <a href="https://inria.hal.science/hal-00690679/document">PDF</a></span>
       </li>
     </ol>
   </div>
+</div>
 <!-- hal:end -->
       </div>
     </div>
@@ -954,23 +951,29 @@
 </footer>
 
 <script>
-  // Type filters: without JavaScript the full list stays visible.
+  // Group the HAL list by year (as generated) or by type. Without JavaScript the year view stays.
   (function () {
-    var bar = document.getElementById("filters");
-    if (!bar) return;
+    var bar = document.getElementById("pub-sort"), list = document.getElementById("pub-list");
+    if (!bar || !list) return;
+    var items = Array.prototype.slice.call(list.querySelectorAll("li[data-type]"));
     bar.hidden = false;
     bar.addEventListener("click", function (e) {
-      var btn = e.target.closest("button[data-filter]");
+      var btn = e.target.closest("button[data-sort]");
       if (!btn) return;
-      var f = btn.dataset.filter;
+      var byType = btn.dataset.sort === "type";
       bar.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b === btn); });
-      document.querySelectorAll(".pub-group").forEach(function (g) {
-        var shown = 0;
-        g.querySelectorAll("li[data-type]").forEach(function (li) {
-          li.hidden = f !== "all" && li.dataset.type !== f;
-          if (!li.hidden) shown++;
-        });
-        g.hidden = shown === 0;
+      var keys = byType ? list.dataset.types.split(" ") : [];
+      if (!byType) items.forEach(function (li) { if (keys.indexOf(li.dataset.year) < 0) keys.push(li.dataset.year); });
+      list.innerHTML = "";
+      list.classList.toggle("by-type", byType);
+      keys.forEach(function (k) {
+        var group = items.filter(function (li) { return (byType ? li.dataset.type : li.dataset.year) === k; });
+        if (!group.length) return;
+        var div = document.createElement("div"), h = document.createElement("h3"), ol = document.createElement("ol");
+        div.className = "pub-group"; h.className = "pub-year"; ol.className = "pubs";
+        h.textContent = byType ? group[0].dataset.group + " · " + group.length : k;
+        group.forEach(function (li) { ol.appendChild(li); });
+        div.appendChild(h); div.appendChild(ol); list.appendChild(div);
       });
     });
   })();

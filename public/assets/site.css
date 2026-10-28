@@ -201,6 +201,9 @@ main { padding-bottom: 3rem; }
 .pubs .authors b { color: var(--ink); font-weight: 600; }
 .pubs .venue { display: block; font-size: 0.95rem; font-style: italic; }
 .pubs .tag { font-size: 0.72rem; color: var(--accent); margin-right: 0.5rem; font-style: normal; white-space: nowrap; }
+.pubs .pub-y { display: none; }
+.by-type .pubs .pub-y { display: inline; }
+.by-type .pubs .tag:not(.pub-y) { display: none; }
 .pubs .acts { font: 500 0.8rem/1.6 var(--mono); }
 .pubs .acts a { margin-right: 0.8rem; }
 [hidden] { display: none !important; }

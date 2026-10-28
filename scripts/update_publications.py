@@ -13,7 +13,6 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -22,7 +21,7 @@ PAGE = Path(__file__).resolve().parent.parent / "public" / "research" / "publica
 FIELDS = ("halId_s,uri_s,docType_s,title_s,authFullName_s,producedDateY_i,journalTitle_s,"
           "conferenceTitle_s,bookTitle_s,city_s,volume_s,issue_s,page_s,doiId_s,fileMain_s")
 
-# HAL document type -> (filter key, label shown on the page). Order = order of the filters.
+# HAL document type -> (group key, label shown on each entry).
 TYPES = {
     "ART": ("journal", "Journal"),
     "COMM": ("conference", "Conference"),
@@ -37,6 +36,7 @@ TYPES = {
     "SOFTWARE": ("other", "Software"),
     "BLOG": ("other", "Outreach"),
 }
+# Group key -> heading when the list is grouped by type, in display order.
 FILTERS = {"journal": "Journals", "conference": "Conferences", "chapter": "Books and chapters",
            "edited": "Edited volumes", "report": "Reports and preprints", "other": "Other"}
 
@@ -81,24 +81,23 @@ def entry(d):
     if d.get("doiId_s"):
         acts.append(f'<a href="https://doi.org/{esc(d["doiId_s"])}">DOI</a>')
     v = venue(d)
-    return (f'      <li data-type="{key}">\n'
+    y = d.get("producedDateY_i", "n.d.")
+    return (f'      <li data-type="{key}" data-group="{FILTERS[key]}" data-year="{y}">\n'
             f'        <span class="title">{esc(title)}</span>\n'
             f'        <span class="authors">{authors(d.get("authFullName_s", []))}</span>\n'
-            f'        <span class="venue"><span class="tag">{label}</span>{v}</span>\n'
+            f'        <span class="venue"><span class="tag">{label}</span><span class="tag pub-y">{y}</span>{v}</span>\n'
             f'        <span class="acts">{" ".join(acts)}</span>\n'
             f'      </li>')
 
 
 def render(docs):
-    counts = Counter(TYPES.get(d["docType_s"], ("other",))[0] for d in docs)
     lines = [f'<p class="muted">{len(docs)} documents in HAL, retrieved on {date.today():%d %B %Y}.</p>',
-             '<fieldset class="filters" id="filters" hidden>',
-             '  <legend>Show</legend>',
-             f'  <button type="button" data-filter="all" aria-pressed="true">All · {len(docs)}</button>']
-    for key, label in FILTERS.items():
-        if counts[key]:
-            lines.append(f'  <button type="button" data-filter="{key}" aria-pressed="false">{label} · {counts[key]}</button>')
-    lines.append('</fieldset>')
+             '<fieldset class="filters" id="pub-sort" hidden>',
+             '  <legend>Group by</legend>',
+             '  <button type="button" data-sort="year" aria-pressed="true">Year</button>',
+             '  <button type="button" data-sort="type" aria-pressed="false">Type</button>',
+             '</fieldset>',
+             f'<div id="pub-list" data-types="{" ".join(FILTERS)}">']
     year = None
     for d in docs:
         y = d.get("producedDateY_i", "n.d.")
@@ -110,6 +109,7 @@ def render(docs):
         lines.append(entry(d))
     if year is not None:
         lines.append('    </ol>\n  </div>')
+    lines.append('</div>')
     return "\n".join(lines)
 
 
